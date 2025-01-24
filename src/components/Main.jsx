@@ -1,7 +1,13 @@
+import { useTranslation } from "react-i18next";
+import PageIntro from "./PageIntro";
+
 function Main() {
+  const { t } = useTranslation();
+  const tr = t("home", { returnObjects: true });
+
   return (
     <div>
-      <h1>Home page</h1>
+      <PageIntro data={tr} />
     </div>
   );
 }
