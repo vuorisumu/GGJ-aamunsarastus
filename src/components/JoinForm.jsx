@@ -49,8 +49,8 @@ function JoinForm() {
         ))}
       </ul>
 
-      <button onClick={() => checkAnswers()}>Lähetä</button>
-      <button onClick={() => console.log("click")}>Reset</button>
+      <button onClick={() => checkAnswers()}>{tr.send}</button>
+      <button onClick={() => console.log("click")}>{tr.reset}</button>
     </div>
   );
 }
