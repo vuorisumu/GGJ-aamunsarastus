@@ -15,6 +15,16 @@ function JoinForm() {
     setAnswers(questionBase);
   }, [tr]);
 
+  const checkAnswers = () => [
+    answers.map((a) => {
+      if (a.userInput === a.a) {
+        console.log(a.q, "oikein");
+      } else {
+        console.log(a.q, "väärin");
+      }
+    }),
+  ];
+
   return (
     <div>
       <h3>{tr.title}</h3>
@@ -28,7 +38,7 @@ function JoinForm() {
         ))}
       </ul>
 
-      <button onClick={() => console.log("click")}>Lähetä</button>
+      <button onClick={() => checkAnswers()}>Lähetä</button>
       <button onClick={() => console.log("click")}>Reset</button>
     </div>
   );
