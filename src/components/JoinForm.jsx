@@ -8,6 +8,8 @@ function JoinForm() {
 
   useEffect(() => {
     if (!tr.questions) return;
+
+    // set base for questions and answers
     const questionBase = tr.questions.map((question) => ({
       ...question,
       userInput: "",
@@ -15,12 +17,14 @@ function JoinForm() {
     setAnswers(questionBase);
   }, [tr]);
 
+  // set user input to state
   const handleInputChange = (input, index) => {
     setAnswers((prev) =>
       prev.map((q, i) => (i === index ? { ...q, userInput: input } : q))
     );
   };
 
+  // check if all answers are correct
   const checkAnswers = () => [
     answers.map((a) => {
       if (a.userInput.toLowerCase() === a.a.toLowerCase()) {
@@ -30,6 +34,11 @@ function JoinForm() {
       }
     }),
   ];
+
+  // clear all input fields
+  const clearAll = () => {
+    setAnswers((prev) => prev.map((q) => ({ ...q, userInput: "" })));
+  };
 
   return (
     <div>
@@ -50,7 +59,7 @@ function JoinForm() {
       </ul>
 
       <button onClick={() => checkAnswers()}>{tr.send}</button>
-      <button onClick={() => console.log("click")}>{tr.reset}</button>
+      <button onClick={() => clearAll()}>{tr.reset}</button>
     </div>
   );
 }
