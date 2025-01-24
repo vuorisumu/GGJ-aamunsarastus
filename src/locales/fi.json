@@ -1,5 +1,18 @@
 {
-  "key": {
-    "test": "test"
+  "join-us": {
+    "title": "Liittymislomake",
+    "description": "Täytä lomake ja liity meihin!",
+    "questions": [
+      {
+        "q": "Kysymys",
+        "a": "Oikea vastaus"
+      },
+      {
+        "q": "Kysymys 2",
+        "a": "Oikea vastaus"
+      }
+    ],
+    "send": "Lähetä",
+    "reset": "Tyhjennä"
   }
 }
