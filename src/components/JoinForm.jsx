@@ -15,6 +15,12 @@ function JoinForm() {
     setAnswers(questionBase);
   }, [tr]);
 
+  const handleInputChange = (input, index) => {
+    setAnswers((prev) =>
+      prev.map((q, i) => (i === index ? { ...q, userInput: input } : q))
+    );
+  };
+
   const checkAnswers = () => [
     answers.map((a) => {
       if (a.userInput === a.a) {
@@ -33,7 +39,12 @@ function JoinForm() {
         {answers.map((q, i) => (
           <li key={`q${i}`}>
             <label>{q.q}</label>
-            <input type="text" placeholder={q.a} />
+            <input
+              type="text"
+              placeholder={q.a}
+              value={q.userInput}
+              onChange={(e) => handleInputChange(e.target.value, i)}
+            />
           </li>
         ))}
       </ul>
