@@ -9,6 +9,8 @@ function JoinForm() {
           <input type="text" placeholder="vastaus" />
         </li>
       </ul>
+      <button onClick={() => console.log("click")}>Lähetä</button>
+      <button onClick={() => console.log("click")}>Reset</button>
     </div>
   );
 }
