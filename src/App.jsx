@@ -1,10 +1,20 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div>
-      <h1>Aamunsarastuksen Mökkiseura</h1>
-    </div>
+    <Router>
+      <header>
+        <h1>Aamunsarastuksen Mökkiseura</h1>
+      </header>
+
+      <main>
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
