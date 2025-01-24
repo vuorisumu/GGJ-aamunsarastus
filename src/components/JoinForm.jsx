@@ -23,7 +23,7 @@ function JoinForm() {
 
   const checkAnswers = () => [
     answers.map((a) => {
-      if (a.userInput === a.a) {
+      if (a.userInput.toLowerCase() === a.a.toLowerCase()) {
         console.log(a.q, "oikein");
       } else {
         console.log(a.q, "väärin");
