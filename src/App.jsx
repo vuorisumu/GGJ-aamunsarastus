@@ -1,12 +1,13 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Main from "./components/Main";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <Router>
       <header>
-        <h1>Aamunsarastuksen Mökkiseura</h1>
+        <Nav />
       </header>
 
       <main>
