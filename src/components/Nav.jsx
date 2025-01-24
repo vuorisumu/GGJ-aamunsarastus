@@ -8,7 +8,7 @@ function Nav() {
           <NavLink to="/">Etusivu</NavLink>
         </li>
         <li>
-          <NavLink to="/">Toinen sivu</NavLink>
+          <NavLink to="/liity">Liity</NavLink>
         </li>
       </ul>
     </nav>
