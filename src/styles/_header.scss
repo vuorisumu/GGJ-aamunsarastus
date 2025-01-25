@@ -1,19 +1,19 @@
 header {
-    &.phase1 {
+  nav ul {
+    margin: 0;
+  }
+
+  &.phase1 {
+  }
+
+  &.phase2 {
+  }
+
+  &.phase3 {
+    color: red;
+
+    nav {
+      background-color: rgb(0, 0, 0);
     }
-
-    &.phase2 {
-    }
-
-    &.phase3 {
-        color: red;
-
-        nav {
-            background-color: rgb(0, 0, 0);
-
-            ul {
-                margin: 0;
-            }
-        }
-    }
+  }
 }

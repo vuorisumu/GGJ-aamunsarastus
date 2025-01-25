@@ -5,92 +5,98 @@
 
 body,
 #root {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 
-        li {
-            padding: 10px;
+    li {
+      padding: 10px;
 
-            &:first-child {
-                flex-grow: 1;
-            }
-        }
+      &:first-child {
+        flex-grow: 1;
+      }
     }
+  }
 }
 
 .banner {
-    overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+  img {
     width: 100%;
-    height: 300px;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .texts {
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-    }
+  .texts {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
 }
 
 section {
-    background: colors.$secondary-color;
+  background: colors.$secondary-color;
 }
 
 .comments {
-    section {
-        display: grid;
-        grid-template-columns: 100px auto;
-        align-items: start;
+  section {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: start;
 
-        p {
-            margin: 0;
-        }
-
-        .from {
-            .user {
-                font-weight: 600;
-            }
-
-            .date {
-                font-style: italic;
-            }
-        }
+    p {
+      margin: 0;
     }
+
+    .from {
+      .user {
+        font-weight: 600;
+      }
+
+      .date {
+        font-style: italic;
+      }
+    }
+  }
 }
 
 .popup {
-    position: fixed;
-    bottom: 0;
-    z-index: 3;
-    background: colors.$secondary-color;
-    padding-top: 25px;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: colors.$secondary-color;
+  padding-top: 25px;
 
-    &.closed {
-        height: 0;
-    }
+  &.closed {
+    height: 0;
+  }
 
-    button {
-        float: right;
-        margin-top: -20px;
-        margin-right: 5px;
-    }
+  button {
+    float: right;
+    margin-top: -20px;
+    margin-right: 5px;
+  }
 
-    h2,
-    p {
-        margin: 5px;
-        padding: 10px;
-        background: colors.$primary-color;
-    }
+  h2,
+  p {
+    margin: 5px;
+    padding: 10px;
+    background: colors.$primary-color;
+  }
+}
+
+footer {
+  p {
+    margin: 0;
+  }
 }
