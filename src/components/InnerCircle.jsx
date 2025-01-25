@@ -21,6 +21,15 @@ function InnerCircle() {
   const checkInput = () => {
     if (input === "salasana") {
       initPhaseThree();
+    } else {
+      setInput("");
+    }
+  };
+
+  // handle enter key
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      checkInput();
     }
   };
 
@@ -34,6 +43,7 @@ function InnerCircle() {
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
       <button onClick={() => checkInput()}>Lähetä</button>
     </div>
