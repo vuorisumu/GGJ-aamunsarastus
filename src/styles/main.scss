@@ -76,6 +76,10 @@ section {
   background: colors.$secondary-color;
   padding-top: 20px;
 
+  &.closed {
+    height: 0;
+  }
+
   button {
     float: right;
     margin-top: -20px;
