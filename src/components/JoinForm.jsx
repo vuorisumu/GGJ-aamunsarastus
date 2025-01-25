@@ -2,12 +2,20 @@ import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import UserContext from "../util/UserContext";
 import PageIntro from "./PageIntro";
+import { useNavigate } from "react-router-dom";
 
 function JoinForm() {
-  const { initPhaseTwo } = useContext(UserContext);
+  const { phase, initPhaseTwo } = useContext(UserContext);
   const { t } = useTranslation();
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (phase !== 1) {
+      navigate("/");
+    }
+  });
 
   useEffect(() => {
     if (!tr.questions) return;
