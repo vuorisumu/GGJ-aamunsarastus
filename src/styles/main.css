@@ -69,14 +69,31 @@ header.phase2 nav ul li:not(:first-child) {
 header.phase2 nav ul li:not(:first-child) a {
   color: red;
 }
+header.phase3 {
+  color: black;
+}
+header.phase3 nav {
+  background: white;
+}
+header.phase3 nav ul li:not(:first-child) {
+  background-color: #fff;
+}
+header.phase3 nav ul li:not(:first-child) a {
+  color: black;
+}
+
 #wrapper {
   background: var(--primary-color);
   color: var(--text-primary);
   min-height: 100vh;
 }
-#wrapper.phase3 {
+#wrapper.phase2 {
   background-color: black;
   color: red;
+}
+#wrapper.phase3 {
+  background-color: white;
+  color: black;
 }
 
 main {
@@ -151,17 +168,14 @@ main.phase3 .center-text p {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
-  color: rgb(255, 186, 182);
-  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  color: black;
   padding: 20px 50px;
   max-width: 700px;
   margin: auto;
 }
-main.phase3 .center-text .penta {
-  position: absolute;
-  z-index: 1;
-  right: 20%;
-  width: 60%;
+main.phase3 section {
+  background-color: #fff;
+  color: #000;
 }
 
 body,

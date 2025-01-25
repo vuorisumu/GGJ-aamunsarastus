@@ -54,5 +54,16 @@ header {
   }
 
   &.phase3 {
+    color: black;
+
+    nav {
+      background: white;
+      ul li:not(:first-child) {
+        background-color: #fff;
+        a {
+          color: black;
+        }
+      }
+    }
   }
 }
