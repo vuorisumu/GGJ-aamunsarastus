@@ -2,10 +2,12 @@ $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $text-primary: var(--text-primary);
 $accent-primary: var(--accent-primary);
+$link-color: var(--link-color);
 
 :root {
   --primary-color: #979c83;
   --secondary-color: #b1b5a1;
   --text-primary: #392724;
-  --accent-primary: #ffebab;
+  --accent-primary: #ffffff;
+  --link-color: #60a64c;
 }
