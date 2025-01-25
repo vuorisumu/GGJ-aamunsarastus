@@ -1,0 +1,29 @@
+@mixin formElement() {
+  display: block;
+  width: 100%;
+  padding: 2px;
+  margin: 2px 0;
+}
+
+.join-form {
+  ul {
+    list-style: none;
+    padding: 10px;
+
+    li {
+      padding: 5px 0;
+
+      &.false {
+        border: 1px solid red;
+      }
+
+      label {
+        @include formElement();
+      }
+
+      input {
+        @include formElement();
+      }
+    }
+  }
+}

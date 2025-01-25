@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import UserContext from "../util/UserContext";
+import PageIntro from "./PageIntro";
 
 function JoinForm() {
+  const { initPhaseTwo } = useContext(UserContext);
   const { t } = useTranslation();
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
@@ -25,15 +28,27 @@ function JoinForm() {
   };
 
   // check if all answers are correct
-  const checkAnswers = () => [
-    answers.map((a) => {
-      if (a.userInput.toLowerCase() === a.a.toLowerCase()) {
-        console.log(a.q, "oikein");
-      } else {
-        console.log(a.q, "väärin");
-      }
-    }),
-  ];
+  const checkAnswers = () => {
+    // for setting the false class to list elements
+    setAnswers((prev) =>
+      prev.map((a) => ({
+        ...a,
+        correct: a.userInput.toLowerCase() === a.a.toLowerCase(),
+      }))
+    );
+
+    // check if all correct
+    const allCorrect = answers.every(
+      (a) => a.userInput.toLowerCase() === a.a.toLowerCase()
+    );
+
+    if (allCorrect) {
+      // phase two starts
+      initPhaseTwo();
+    } else {
+      console.log("Wrong answers");
+    }
+  };
 
   // clear all input fields
   const clearAll = () => {
@@ -41,12 +56,12 @@ function JoinForm() {
   };
 
   return (
-    <div>
-      <h3>{tr.title}</h3>
+    <div className="join-form">
+      <PageIntro data={tr} />
 
       <ul>
         {answers.map((q, i) => (
-          <li key={`q${i}`}>
+          <li key={`q${i}`} className={q.correct === false ? "false" : ""}>
             <label>{q.q}</label>
             <input
               type="text"
