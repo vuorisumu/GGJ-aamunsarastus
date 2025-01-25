@@ -238,16 +238,19 @@ section {
   position: fixed;
   bottom: 0;
   z-index: 3;
-  background: var(--secondary-color);
-  padding-top: 25px;
+  background: rgb(120, 10, 10);
+  padding-top: 28px;
 }
 .popup.closed {
   height: 0;
 }
 .popup button {
   float: right;
-  margin-top: -20px;
+  margin-top: -23px;
   margin-right: 5px;
+  background: black;
+  border: 0;
+  color: red;
 }
 .popup h2,
 .popup p {

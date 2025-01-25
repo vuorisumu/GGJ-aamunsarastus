@@ -66,8 +66,8 @@ section {
   position: fixed;
   bottom: 0;
   z-index: 3;
-  background: colors.$secondary-color;
-  padding-top: 25px;
+  background: rgb(120, 10, 10);
+  padding-top: 28px;
 
   &.closed {
     height: 0;
@@ -75,8 +75,11 @@ section {
 
   button {
     float: right;
-    margin-top: -20px;
+    margin-top: -23px;
     margin-right: 5px;
+    background: black;
+    border: 0;
+    color: red;
   }
 
   h2,
