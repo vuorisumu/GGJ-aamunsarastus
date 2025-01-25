@@ -6,22 +6,32 @@ import Footer from "./components/Footer";
 import UserContext from "./util/UserContext";
 import { useState } from "react";
 import Calendar from "./components/Calendar";
+import { getProgress, setProgress } from "./util/progress";
 
 function App() {
-  const [phase, setPhase] = useState(1);
+  const [phase, setPhase] = useState(getProgress());
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
     setPhase(2);
+    setProgress(2);
   };
 
   const initPhaseThree = () => {
     console.log("Phase 3 starts");
     setPhase(3);
+    setProgress(3);
+  };
+
+  const clearPhase = () => {
+    setPhase(1);
+    setProgress(1);
   };
 
   return (
-    <UserContext.Provider value={{ phase, initPhaseTwo, initPhaseThree }}>
+    <UserContext.Provider
+      value={{ phase, initPhaseTwo, initPhaseThree, clearPhase }}
+    >
       <Router>
         <header>
           <Nav />
