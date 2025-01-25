@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import UserContext from "../util/UserContext";
 import PageIntro from "./PageIntro";
 import { useNavigate } from "react-router-dom";
+import Content from "./Content";
 
 function JoinForm() {
   const { phase, initPhaseTwo } = useContext(UserContext);
@@ -66,6 +67,8 @@ function JoinForm() {
   return (
     <div className="join-form">
       <PageIntro data={tr} />
+
+      <Content data={tr.content} />
 
       <ul>
         {answers.map((q, i) => (
