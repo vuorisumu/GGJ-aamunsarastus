@@ -124,6 +124,7 @@ main.phase2 section {
 main.phase2 .image-display {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 main.phase2 .image-display section {
   margin-bottom: 10px;
