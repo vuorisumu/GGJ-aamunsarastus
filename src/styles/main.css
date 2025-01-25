@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #979c83;
+  --secondary-color: #b1b5a1;
+  --text-primary: #392724;
+  --accent-primary: #ffebab;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--text-primary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li:first-child {
+  flex-grow: 1;
+}
+
+.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .texts {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+section {
+  background: var(--secondary-color);
+}
+
+.comments section {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: start;
+}
+.comments section p {
+  margin: 0;
+}
+.comments section .from .user {
+  font-weight: 600;
+}
+.comments section .from .date {
+  font-style: italic;
+}/*# sourceMappingURL=main.css.map */

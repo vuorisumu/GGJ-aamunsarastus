@@ -1,0 +1,40 @@
+{
+  "home": {
+    "img": "placeholder.jpg",
+    "title": "Aamunsarastuksen Mökkiseura",
+    "description": "Tervetuloa! Olemme kivoja",
+    "content": [
+      {
+        "title": "Väliotsikko",
+        "text": "Jotain tekstiä tähän"
+      },
+      {
+        "title": "Toinen väliotsikko",
+        "text": "Tektsiä lisää"
+      }
+    ],
+    "comments": [
+      {
+        "user": "Pekka Peräsalo",
+        "date": "1.1.2001",
+        "comment": "Ihan paskaa"
+      }
+    ]
+  },
+  "join-us": {
+    "title": "Liittymislomake",
+    "description": "Täytä lomake ja liity meihin!",
+    "questions": [
+      {
+        "q": "Kysymys",
+        "a": "Oikea vastaus"
+      },
+      {
+        "q": "Kysymys 2",
+        "a": "Oikea vastaus"
+      }
+    ],
+    "send": "Lähetä",
+    "reset": "Tyhjennä"
+  }
+}

@@ -1,0 +1,67 @@
+@use "colors";
+
+body {
+  background: colors.$primary-color;
+  color: colors.$text-primary;
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 10px;
+
+      &:first-child {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .texts {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+}
+
+section {
+  background: colors.$secondary-color;
+}
+
+.comments {
+  section {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: start;
+
+    p {
+      margin: 0;
+    }
+
+    .from {
+      .user {
+        font-weight: 600;
+      }
+
+      .date {
+        font-style: italic;
+      }
+    }
+  }
+}
