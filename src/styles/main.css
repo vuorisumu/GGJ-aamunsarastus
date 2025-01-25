@@ -80,4 +80,26 @@ section {
 }
 .comments section .from .date {
   font-style: italic;
+}
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: var(--secondary-color);
+  padding-top: 25px;
+}
+.popup.closed {
+  height: 0;
+}
+.popup button {
+  float: right;
+  margin-top: -20px;
+  margin-right: 5px;
+}
+.popup h2,
+.popup p {
+  margin: 5px;
+  padding: 10px;
+  background: var(--primary-color);
 }/*# sourceMappingURL=main.css.map */

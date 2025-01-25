@@ -68,3 +68,28 @@ section {
     }
   }
 }
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: colors.$secondary-color;
+  padding-top: 25px;
+
+  &.closed {
+    height: 0;
+  }
+
+  button {
+    float: right;
+    margin-top: -20px;
+    margin-right: 5px;
+  }
+
+  h2,
+  p {
+    margin: 5px;
+    padding: 10px;
+    background: colors.$primary-color;
+  }
+}
