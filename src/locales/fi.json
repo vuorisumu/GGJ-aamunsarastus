@@ -2,7 +2,17 @@
   "home": {
     "img": "placeholder.jpg",
     "title": "Aamunsarastuksen Mökkiseura",
-    "description": "Tervetuloa! Olemme kivoja"
+    "description": "Tervetuloa! Olemme kivoja",
+    "content": [
+      {
+        "title": "Väliotsikko",
+        "text": "Jotain tekstiä tähän"
+      },
+      {
+        "title": "Toinen väliotsikko",
+        "text": "Tektsiä lisää"
+      }
+    ]
   },
   "join-us": {
     "title": "Liittymislomake",
