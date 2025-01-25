@@ -57,6 +57,7 @@ function JoinForm() {
       initPhaseTwo();
     } else {
       setError(true);
+      clearAll();
     }
   };
 
