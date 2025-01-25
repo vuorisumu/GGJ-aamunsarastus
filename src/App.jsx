@@ -25,13 +25,17 @@ function App() {
             setPopupStart(new Date());
           }
         } else {
-          const el = (new Date() - popupStart) / 5000;
+          const el = (new Date() - popupStart) / 1000;
           setTime(el);
         }
       }, 5000);
       return () => clearInterval(interval);
     }
   }, [phase, popup, popupStart]);
+
+  useEffect(() => {
+    console.log(time);
+  }, [time]);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
