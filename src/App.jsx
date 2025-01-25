@@ -58,11 +58,11 @@ function App() {
       value={{ phase, initPhaseTwo, initPhaseThree, clearPhase }}
     >
       <Router>
-        <header>
+        <header className={`phase${phase}`}>
           <Nav />
         </header>
 
-        <main>
+        <main className={`phase${phase}`}>
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
