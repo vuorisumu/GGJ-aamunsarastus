@@ -119,7 +119,8 @@ main.phase2 .banner {
   height: 9rem;
 }
 main.phase2 section {
-  background-color: red;
+  background-color: #611313;
+  color: #fff;
 }
 main.phase2 .image-display {
   display: flex;
