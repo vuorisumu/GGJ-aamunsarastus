@@ -6,7 +6,7 @@ import { useContext } from "react";
 import UserContext from "../util/UserContext";
 
 function Main() {
-  const { phase } = useContext(UserContext);
+  const { phase, clearPhase } = useContext(UserContext);
   const { t } = useTranslation();
   const tr = t("home", { returnObjects: true });
 
@@ -17,6 +17,8 @@ function Main() {
 
       <Content data={tr.content} />
       <CommentSection data={tr.comments} />
+
+      <button onClick={() => clearPhase()}>Nollaa edistyminen</button>
     </div>
   );
 }

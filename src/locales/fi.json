@@ -1,6 +1,6 @@
 {
   "home": {
-    "img": "placeholder.jpg",
+    "img": "Jarvi_1.jpg",
     "title": "Aamunsarastuksen Mökkiseura",
     "description": "Tervetuloa! Olemme kivoja",
     "content": [
@@ -21,6 +21,17 @@
       }
     ]
   },
+  "about": {
+    "img": "Puita.jpg",
+    "title": "Tietoa meistä",
+    "description": "Jee",
+    "content": [
+      {
+        "title": "Otsikko",
+        "text": "Tekstiä"
+      }
+    ]
+  },
   "join-us": {
     "title": "Liittymislomake",
     "description": "Täytä lomake ja liity meihin!",
@@ -36,5 +47,33 @@
     ],
     "send": "Lähetä",
     "reset": "Tyhjennä"
+  },
+  "calendar": {
+    "title": "Kalenteri",
+    "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
+    "dates": [
+      {
+        "date": "1.1.2001",
+        "event": "Mökkivaraus"
+      },
+      {
+        "date": "2.1.2001",
+        "event": "Mökkivaraus"
+      }
+    ]
+  },
+  "admin": {
+    "title": "Ylläpitopiirit",
+    "description": "SInister shittii",
+    "content": [
+      {
+        "title": "Otsikko",
+        "text": "sdfjsdf"
+      },
+      {
+        "title": "Otsikko 2",
+        "text": "sdfkjsgf"
+      }
+    ]
   }
 }
