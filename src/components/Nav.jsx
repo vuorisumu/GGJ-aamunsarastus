@@ -5,6 +5,9 @@ function Nav() {
     <nav>
       <ul>
         <li>
+          <p>Aamunsarastuksen Mökkiseura</p>
+        </li>
+        <li>
           <NavLink to="/">Etusivu</NavLink>
         </li>
         <li>
