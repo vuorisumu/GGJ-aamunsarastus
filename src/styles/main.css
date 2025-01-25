@@ -51,6 +51,15 @@ header.phase3 nav {
 main {
   padding: 0 30px;
 }
+main .banner .texts {
+  padding: 0 20px;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+main .banner .texts h1,
+main .banner .texts p {
+  margin: 10px 0;
+}
 main.phase3 {
   background-color: black;
 }
