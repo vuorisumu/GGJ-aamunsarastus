@@ -36,5 +36,19 @@
     ],
     "send": "Lähetä",
     "reset": "Tyhjennä"
+  },
+  "calendar": {
+    "title": "Kalenteri",
+    "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
+    "dates": [
+      {
+        "date": "1.1.2001",
+        "event": "Mökkivaraus"
+      },
+      {
+        "date": "2.1.2001",
+        "event": "Mökkivaraus"
+      }
+    ]
   }
 }

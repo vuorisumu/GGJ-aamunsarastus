@@ -5,18 +5,19 @@ import JoinForm from "./components/JoinForm";
 import Footer from "./components/Footer";
 import UserContext from "./util/UserContext";
 import { useState } from "react";
+import Calendar from "./components/Calendar";
 
 function App() {
-  const [phase, setPhase] = useState(0);
+  const [phase, setPhase] = useState(1);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
-    setPhase(1);
+    setPhase(2);
   };
 
   const initPhaseThree = () => {
     console.log("Phase 3 starts");
-    setPhase(2);
+    setPhase(3);
   };
 
   return (
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/liity" element={<JoinForm />} />
+            <Route path="/calendar" element={<Calendar />} />
           </Routes>
         </main>
 
