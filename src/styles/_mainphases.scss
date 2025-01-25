@@ -13,6 +13,12 @@
     font-weight: 600;
   }
 
+  &.phase1 {
+    button {
+      margin-right: 15px;
+    }
+  }
+
   &.phase2 {
     background-color: black;
     color: red;

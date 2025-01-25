@@ -94,6 +94,9 @@ header.phase3 nav ul li:not(:first-child) a {
   border-radius: 10px;
   font-weight: 600;
 }
+#wrapper.phase1 button {
+  margin-right: 15px;
+}
 #wrapper.phase2 {
   background-color: black;
   color: red;
