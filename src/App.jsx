@@ -15,6 +15,7 @@ function App() {
   const [popup, setPopup] = useState(false);
   const [popupStart, setPopupStart] = useState();
   const [time, setTime] = useState();
+  const [closed, setClosed] = useState(false);
 
   useEffect(() => {
     if (phase === 2) {
@@ -73,7 +74,8 @@ function App() {
         </main>
 
         {popup && phase === 2 && (
-          <div className="popup">
+          <div className={`${closed ? "closed" : ""} popup`}>
+            <button onClick={() => setClosed(!closed)}>x</button>
             <h2>MORJESTA</h2>
             <p>Etpäs arvannukkaan että tulen täältä tällee</p>
 

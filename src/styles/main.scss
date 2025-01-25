@@ -74,4 +74,17 @@ section {
   bottom: 0;
   z-index: 3;
   background: colors.$secondary-color;
+  padding-top: 20px;
+
+  button {
+    float: right;
+    margin-top: -20px;
+  }
+
+  h2,
+  p {
+    margin: 5px;
+    padding: 10px;
+    background: colors.$primary-color;
+  }
 }
