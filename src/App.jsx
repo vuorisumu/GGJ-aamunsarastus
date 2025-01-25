@@ -14,8 +14,13 @@ function App() {
     setPhase(1);
   };
 
+  const initPhaseThree = () => {
+    console.log("Phase 3 starts");
+    setPhase(2);
+  };
+
   return (
-    <UserContext.Provider value={{ phase, initPhaseTwo }}>
+    <UserContext.Provider value={{ phase, initPhaseTwo, initPhaseThree }}>
       <Router>
         <header>
           <Nav />
