@@ -9,7 +9,7 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <p>Aamunsarastuksen Mökkiseura</p>
+          <h2>Aamunsarastuksen Mökkiseura</h2>
         </li>
         <li>
           <NavLink to="/">Etusivu</NavLink>
@@ -25,7 +25,7 @@ function Nav() {
 
         {phase === 2 && (
           <li>
-            <NavLink to="/sisapiiri">Sisäpiiri</NavLink>
+            <NavLink to="/calendar">Kalenteri</NavLink>
           </li>
         )}
 

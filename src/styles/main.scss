@@ -2,95 +2,92 @@
 @use "form";
 @use "header";
 @use "mainphases";
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body,
 #root {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-    ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-
-        li {
-            padding: 10px;
-
-            &:first-child {
-                flex-grow: 1;
-            }
-        }
-    }
+h1,
+h2,
+.banner p {
+  font-family: "Montserrat Alternates", serif;
 }
 
 .banner {
-    overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+  img {
     width: 100%;
-    height: 300px;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .texts {
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-    }
+  .texts {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
 }
 
 section {
-    background: colors.$secondary-color;
+  background: colors.$secondary-color;
+  padding: 20px 40px;
 }
 
 .comments {
-    section {
-        display: grid;
-        grid-template-columns: 100px auto;
-        align-items: start;
+  section {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: start;
 
-        p {
-            margin: 0;
-        }
-
-        .from {
-            .user {
-                font-weight: 600;
-            }
-
-            .date {
-                font-style: italic;
-            }
-        }
+    p {
+      margin: 0;
     }
+
+    .from {
+      .user {
+        font-weight: 600;
+      }
+
+      .date {
+        font-style: italic;
+      }
+    }
+  }
 }
 
 .popup {
-    position: fixed;
-    bottom: 0;
-    z-index: 3;
-    background: colors.$secondary-color;
-    padding-top: 25px;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: colors.$secondary-color;
+  padding-top: 25px;
 
-    &.closed {
-        height: 0;
-    }
+  &.closed {
+    height: 0;
+  }
 
-    button {
-        float: right;
-        margin-top: -20px;
-        margin-right: 5px;
-    }
+  button {
+    float: right;
+    margin-top: -20px;
+    margin-right: 5px;
+  }
 
-    h2,
-    p {
-        margin: 5px;
-        padding: 10px;
-        background: colors.$primary-color;
-    }
+  h2,
+  p {
+    margin: 5px;
+    padding: 10px;
+    background: colors.$primary-color;
+  }
+}
+
+footer {
+  p {
+    margin: 0;
+  }
 }
