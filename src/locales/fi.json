@@ -51,17 +51,13 @@
     "send": "Lähetä",
     "reset": "Tyhjennä"
   },
-  "calendar": {
-    "title": "Kalenteri",
+  "inner-circle": {
+    "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
-    "dates": [
+    "content": [
       {
-        "date": "1.1.2001",
-        "event": "Mökkivaraus"
-      },
-      {
-        "date": "2.1.2001",
-        "event": "Mökkivaraus"
+        "title": "OtsikkO",
+        "text": "tekstii"
       }
     ]
   },

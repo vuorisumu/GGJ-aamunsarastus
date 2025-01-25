@@ -25,7 +25,7 @@ function Nav() {
 
         {phase === 2 && (
           <li>
-            <NavLink to="/calendar">Kalenteri</NavLink>
+            <NavLink to="/sisapiiri">Sisäpiiri</NavLink>
           </li>
         )}
 
