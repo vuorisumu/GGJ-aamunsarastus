@@ -54,9 +54,9 @@ function InnerCircle() {
           tr.forum.map((p, i) => (
             <div key={`p${i}`}>
               <h2>{p.title}</h2>
-              <p>{p.user}</p>
-              <p>{p.date}</p>
-              <p>{p.text}</p>
+              <p className="user">{p.user}</p>
+              <p className="date">{p.date}</p>
+              <p className="text">{p.text}</p>
             </div>
           ))}
       </div>

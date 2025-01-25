@@ -98,6 +98,21 @@ main.phase2 .inner-circle .penta {
   right: 20%;
   width: 60%;
 }
+main.phase2 .inner-circle div {
+  background: rgba(255, 6, 6, 0.3);
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 15px 10px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+main.phase2 .inner-circle div .user {
+  font-weight: 600;
+}
+main.phase2 .inner-circle div .date {
+  font-style: italic;
+}
 main.phase2 .glow-image {
   filter: drop-shadow(0 0px 5px rgb(255, 6, 6)) saturate(1);
 }
