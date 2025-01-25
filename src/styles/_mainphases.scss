@@ -69,6 +69,8 @@
 
 main {
   padding: 0 30px;
+  max-width: 900px;
+  margin: auto;
 
   .banner {
     .texts {
@@ -82,7 +84,7 @@ main {
         font-weight: 600;
       }
 
-      padding: 0 20px;
+      padding: 0 40px;
       align-content: center;
       background: rgba(255, 255, 255, 0.463);
     }
