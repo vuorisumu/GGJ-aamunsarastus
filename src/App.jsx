@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import JoinForm from "./components/JoinForm";
