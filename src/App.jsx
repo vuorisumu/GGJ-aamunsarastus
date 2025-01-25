@@ -33,9 +33,7 @@ function App() {
     }
   }, [phase, popup, popupStart]);
 
-  useEffect(() => {
-    console.log(time);
-  }, [time]);
+  useEffect(() => {}, [time]);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
