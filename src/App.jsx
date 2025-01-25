@@ -12,18 +12,26 @@ import About from "./components/About";
 function App() {
   const [phase, setPhase] = useState(getProgress());
   const [popup, setPopup] = useState(false);
+  const [popupStart, setPopupStart] = useState();
+  const [time, setTime] = useState();
 
   useEffect(() => {
-    if (phase === 2 && popup === false) {
+    if (phase === 2) {
       const interval = setInterval(() => {
-        const elapsedTime = new Date() - getStartTime();
-        if (elapsedTime > 5000) {
-          setPopup(true);
+        if (popup === false) {
+          const elapsedTime = new Date() - getStartTime();
+          if (elapsedTime > 5000) {
+            setPopup(true);
+            setPopupStart(new Date());
+          }
+        } else {
+          const el = (new Date() - popupStart) / 5000;
+          setTime(el);
         }
       }, 5000);
       return () => clearInterval(interval);
     }
-  }, [phase, popup]);
+  }, [phase, popup, popupStart]);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
@@ -64,8 +72,15 @@ function App() {
           <div className="popup">
             <h2>MORJESTA</h2>
             <p>Etpäs arvannukkaan että tulen täältä tällee</p>
+
+            {time > 5 && <p>HALOO</p>}
+
+            {time > 10 && <p>AUAAA</p>}
+
+            {time > 15 && <p>auta...</p>}
           </div>
         )}
+
         <Footer />
       </Router>
     </UserContext.Provider>
