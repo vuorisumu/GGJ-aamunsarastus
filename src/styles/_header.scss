@@ -1,10 +1,18 @@
 header {
-  &.phase1 {
-  }
+    &.phase1 {
+    }
 
-  &.phase2 {
-  }
+    &.phase2 {
+    }
 
-  &.phase3 {
-  }
+    &.phase3 {
+        color: red;
+        nav {
+            background-color: rgb(0, 0, 0);
+
+            ul {
+                margin: 0;
+            }
+        }
+    }
 }

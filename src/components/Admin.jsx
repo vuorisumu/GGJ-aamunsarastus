@@ -6,24 +6,24 @@ import UserContext from "../util/UserContext";
 import { useNavigate } from "react-router-dom";
 
 function Admin() {
-  const { phase } = useContext(UserContext);
-  const { t } = useTranslation();
-  const tr = t("admin", { returnObjects: true });
-  const navigate = useNavigate();
+    const { phase } = useContext(UserContext);
+    const { t } = useTranslation();
+    const tr = t("admin", { returnObjects: true });
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    if (phase !== 3) {
-      navigate("/");
-    }
-  });
+    useEffect(() => {
+        if (phase !== 3) {
+            navigate("/");
+        }
+    });
 
-  return (
-    <div>
-      <PageIntro data={tr} />
+    return (
+        <div>
+            <PageIntro data={tr} />
 
-      <Content data={tr.content} />
-    </div>
-  );
+            <Content data={tr.content} />
+        </div>
+    );
 }
 
 export default Admin;
