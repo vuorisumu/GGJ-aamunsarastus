@@ -51,8 +51,22 @@ header.phase3 nav ul {
 main.phase3 {
   background-color: black;
 }
+main.phase3 .banner {
+  height: 9rem;
+}
 main.phase3 section {
   background-color: red;
+}
+main.phase3 #admins section {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+main.phase3 #admins section img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
 }
 
 body,

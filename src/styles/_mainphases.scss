@@ -21,8 +21,25 @@ main {
     &.phase3 {
         background-color: black;
 
+        .banner {
+            height: 9rem;
+        }
+
         section {
             background-color: red;
+        }
+
+        #admins section {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            background-color: black;
+
+            img {
+                width: 150px;
+                height: 150px;
+                margin-right: 20px;
+            }
         }
     }
 }
