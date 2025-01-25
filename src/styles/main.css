@@ -5,6 +5,10 @@
   --accent-primary: #ffebab;
 }
 
+.join-form ul li.false {
+  border: 1px solid red;
+}
+
 body {
   background: var(--primary-color);
   color: var(--text-primary);

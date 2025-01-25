@@ -55,7 +55,7 @@ function JoinForm() {
   };
 
   return (
-    <div>
+    <div className="join-form">
       <h3>{tr.title}</h3>
 
       <ul>
