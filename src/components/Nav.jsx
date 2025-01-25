@@ -9,7 +9,7 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <p>Aamunsarastuksen Mökkiseura</p>
+          <h2>Aamunsarastuksen Mökkiseura</h2>
         </li>
         <li>
           <NavLink to="/">Etusivu</NavLink>
