@@ -56,6 +56,24 @@
     "img": "cottage.jpg",
     "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
+    "imagedisplay": [
+      {
+        "img": "sacrifice.png",
+        "title": "Family",
+        "description": "I'm sorry"
+      },
+      {
+        "img": "sac2.jpg",
+        "title": "Brothers",
+        "description": "I'm sorry"
+      },
+      {
+        "img": "sac3.jpg",
+        "title": "Sisters",
+        "description": "I'm sorry"
+      }
+    ],
+    "background-image": "penta.png",
     "content": [
       {
         "title": "OtsikkO",

@@ -4,9 +4,6 @@ import { useContext, useEffect, useState } from "react";
 import UserContext from "../util/UserContext";
 import { useNavigate } from "react-router-dom";
 import Content from "./Content";
-import sac1 from "../../public/images/sacrifice.png";
-import sac2 from "../../public/images/sac2.jpg";
-import sac3 from "../../public/images/sac3.jpg";
 import pentagram from "../../public/images/penta.png";
 
 function InnerCircle() {
@@ -41,21 +38,14 @@ function InnerCircle() {
     <div>
       <PageIntro data={tr} />
       <div className="image-display">
-        <section>
-          <img src={sac1} alt="admin 1" />
-          <h2>Family</h2>
-          <p>I'm sorry</p>
-        </section>
-        <section>
-          <img src={sac2} alt="admin 1" />
-          <h2>Brothers</h2>
-          <p>I'm sorry</p>
-        </section>
-        <section>
-          <img src={sac3} alt="admin 1" />
-          <h2>Sisters</h2>
-          <p>I'm sorry</p>
-        </section>
+        {tr.imagedisplay &&
+          tr.imagedisplay.map((image, i) => (
+            <section key={`img${i}`}>
+              <img src={`./images/${image.img}`} />
+              <h2>{image.title}</h2>
+              <p>{image.description}</p>
+            </section>
+          ))}
       </div>
       <div className="center-text">
         <img src={pentagram} alt="pentagram" className="glow-image penta" />
