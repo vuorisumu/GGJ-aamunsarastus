@@ -1,3 +1,15 @@
+:root {
+  --primary-color: #979c83;
+  --secondary-color: #b1b5a1;
+  --text-primary: #392724;
+  --accent-primary: #ffebab;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--text-primary);
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -26,4 +38,8 @@ nav ul li:first-child {
   position: absolute;
   inset: 0;
   z-index: 2;
+}
+
+section {
+  background: var(--secondary-color);
 }/*# sourceMappingURL=main.css.map */
