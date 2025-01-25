@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import UserContext from "../util/UserContext";
+import PageIntro from "./PageIntro";
 
 function JoinForm() {
   const { initPhaseTwo } = useContext(UserContext);
@@ -56,7 +57,7 @@ function JoinForm() {
 
   return (
     <div className="join-form">
-      <h3>{tr.title}</h3>
+      <PageIntro data={tr} />
 
       <ul>
         {answers.map((q, i) => (
