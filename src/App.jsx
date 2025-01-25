@@ -70,7 +70,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/liity" element={<JoinForm />} />
               <Route path="/sisapiiri" element={<InnerCircle />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route path="/viesti" element={<Admin />} />
             </Routes>
           </main>
 
