@@ -53,6 +53,7 @@
     "reset": "Tyhjennä"
   },
   "inner-circle": {
+    "img": "cottage.jpg",
     "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
     "content": [
