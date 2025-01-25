@@ -60,13 +60,15 @@ function InnerCircle() {
           ))}
       </div>
 
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        onKeyDown={handleKeyDown}
-      />
-      <button onClick={() => checkInput()}>Lähetä</button>
+      <div className="password">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+        <button onClick={() => checkInput()}>Lähetä</button>
+      </div>
     </div>
   );
 }
