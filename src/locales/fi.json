@@ -61,5 +61,19 @@
         "event": "Mökkivaraus"
       }
     ]
+  },
+  "admin": {
+    "title": "Ylläpitopiirit",
+    "description": "SInister shittii",
+    "content": [
+      {
+        "title": "Otsikko",
+        "text": "sdfjsdf"
+      },
+      {
+        "title": "Otsikko 2",
+        "text": "sdfkjsgf"
+      }
+    ]
   }
 }

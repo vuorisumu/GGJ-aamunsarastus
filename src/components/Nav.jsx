@@ -28,6 +28,12 @@ function Nav() {
             <NavLink to="/calendar">Kalenteri</NavLink>
           </li>
         )}
+
+        {phase === 3 && (
+          <li>
+            <NavLink to="/admin">Ylläpito</NavLink>
+          </li>
+        )}
       </ul>
     </nav>
   );

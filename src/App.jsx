@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Calendar from "./components/Calendar";
 import { getProgress, getStartTime, setProgress } from "./util/progress";
 import About from "./components/About";
+import Admin from "./components/Admin";
 
 function App() {
   const [phase, setPhase] = useState(getProgress());
@@ -67,10 +68,11 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/liity" element={<JoinForm />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
 
-        {popup && (
+        {popup && phase === 2 && (
           <div className="popup">
             <h2>MORJESTA</h2>
             <p>Etpäs arvannukkaan että tulen täältä tällee</p>
