@@ -5,10 +5,10 @@ import JoinForm from "./components/JoinForm";
 import Footer from "./components/Footer";
 import UserContext from "./util/UserContext";
 import { useEffect, useState } from "react";
-import Calendar from "./components/Calendar";
 import { getProgress, getStartTime, setProgress } from "./util/progress";
 import About from "./components/About";
 import Admin from "./components/Admin";
+import InnerCircle from "./components/InnerCircle";
 
 function App() {
     const [phase, setPhase] = useState(getProgress());
@@ -69,7 +69,10 @@ function App() {
                             <Route path="/" element={<Main />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/liity" element={<JoinForm />} />
-                            <Route path="/calendar" element={<Calendar />} />
+                            <Route
+                                path="/sisapiiri"
+                                element={<InnerCircle />}
+                            />
                             <Route path="/admin" element={<Admin />} />
                         </Routes>
                     </main>

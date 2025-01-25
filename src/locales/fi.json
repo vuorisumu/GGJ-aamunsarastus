@@ -2,15 +2,10 @@
   "home": {
     "img": "Jarvi_1.jpg",
     "title": "Aamunsarastuksen Mökkiseura",
-    "description": "Tervetuloa! Olemme kivoja",
+    "description": "Idylinen mökkiyhteisö järven rannassa!",
     "content": [
       {
-        "title": "Väliotsikko",
-        "text": "Jotain tekstiä tähän"
-      },
-      {
-        "title": "Toinen väliotsikko",
-        "text": "Tektsiä lisää"
+        "text": "Vietävänjärven rannan tuntumassa sijaitseva yhteisö toivottaa tervetulleeksi sekä vanhat konkarit että uudet mökkeilijät. Toiminnasta kiinnostuneiden kannattaakin seurata sivuton aktiivisesti, sillä tiivis yhteisömme tarjoaa mahdollisuuden tutustua seuraamme ja tiloihimme aina muutaman kerran vuodessa ja tiedotamme avoimien ovien viikonlopuista aina täällä sivullamme. Uteliaat, pysykää kuulolla!<br /><br />Hakulomake on myös ympärivuotisesti avoinna nille, jotka ovat varmoja mökkihaaveistaan ja haluavat tehdä unelmistaan totta. Uusia paikkoja yhteisössämme on kuitenkin rajatusti, joten joudumme valitettavasti hyväksymään hakemuksista vain ne, jotka vaikuttavat joukkoomme sopivimmilta!<br /><br />Meiltä löydät myös kyläpuodin, joka palvelee sinua maanantaista lauantaihin. Myynnissä muunmuassa seuramme kuuluisaa kotijuustoa, pullaa sekä valikoima lempeästi suolattuja kinkkuja. Tervetuloa ostoksille!<br /><br />Aamunsarastaessa kohtaamme!"
       }
     ],
     "comments": [
@@ -24,17 +19,25 @@
   "about": {
     "img": "Puita.jpg",
     "title": "Tietoa meistä",
-    "description": "Jee",
+    "description": "Aamunsarastuksen mökkiseura on varjellut Vietävänjärven rantoja ja laitumia jo vuodesta 1825!",
     "content": [
       {
-        "title": "Otsikko",
-        "text": "Tekstiä"
+        "title": "Kohtalokkaat tulvat seuran alullepanijana",
+        "text": "Vietävänjärven historiaa varjostaa synkkä menneisyys. Järvi tuli aikojen saatossa tunnetuksi oikukkaasta luonteestaan: milloin se tulvi yli äyräidensä hukuttaen alleen niin viljelysmaat kuin torpatkin, milloin kalakantoja piinasi niukkuus tai sitten taudit tai loiseliöt veivät jo muutoinkin köyhän saaliin. Seudun maa ei tarjonnut otollista viljelysmaata, vaan silti ihmiset yrittivät kaikesta huolimatta sopeutuakseen alueen karuihin oloihin, olivathan heidän esi-isänsäkin jo asuttaneet maata iät ikuiset. Ja kaiken lisäksi, minne he muka voisivat lähteä? Ruuasta oli pulaa jopa seudun vauraimmissakin taloissa. Kylän väki kävi levottomaksi ja pelko asettui taloksi jokaiseen perheeseen. Tuota aikaa paikalliset nimittivät pitkäksi yöksi, sillä kaikki valo tuntui tyystin kaikonneen ihmisten mielistä. Kesällä, vuonna 1825, Vietävänjärvi tulvi ennennäkemättämän paljon. Kohtalokas tulva vei mukanaan sadon, tappoi karjan ja jätti tienoon asukkaat entistä julmemmin kärsimykseensä. Oli selvää, ettei alueen asuttaminen voisi jatkua olosuhteiden riistäessä kaiken toimeentulon. Tuolloin viisaaudestaan ja toimeliaisuudestaan tunnettu mies, Ukko Aarnenpoika, kokosi naapuruston isännät ja emännät koolle ja laati yhdessä heidän kanssaan suunnitelman Vietävänjärven ihmisten tulevaisuuden turvaamiseksi. Niin syntyi Aamunsarastuksen seura. Seura laati suunnitelman järven alueeen turvaamiseksi ja ryhtyi oitis tuumasta toimeen. Jo seuraavana keväänä viljelysonni suosi ahertajia, sato kantoi hedelmää ja tienoon niityt vihannoivat runsaampina kuin milloinkaan ennen, jopa kala söi hyvin. Siitä saakka on Aamunruskon seuran perinne elänyt tiiviinä osana paikallisten arkea ja se on kehkeytynyt osaksi täkäläistä identiteettiä."
+      },
+      {
+        "title": "Pikkupitäjästä mökkiharrastajien kruununjalokiveksi",
+        "text": "Kauas on tultu noista ajoista, kun pitkä yö varjosti nykyään niin kukuistovaa yhteisöämme. Se mikä aikanaan oli pieni kylänpahainen, on aikojen saatossa muovautunut siksi mitä se on nykyisin: idyllinen ja yhteisöllinen mökkiseura. Alkuperäinen Aamunsarastus kulkee silti yhä vahvasti mukana toiminnassamme ja seura on meillä suorastaan veressä, polveutuuhan suuri osa kiihkeistä mökkiharrastajistamme suoraan tuosta alkuperäisestä Ukko Aarnenpojan alulle panemasta seurueesta."
       }
     ]
   },
   "join-us": {
-    "title": "Liittymislomake",
-    "description": "Täytä lomake ja liity meihin!",
+    "title": "Tule osaksi yhteisöä",
+    "content": [
+      {
+        "text": "Oletko vailla unelmiesi kesämökkiä? Oletko haaveillut rauhallisista kesistä lempëän järvimaiseman äärellä? Kaipaatko rakastavaa perhettä, jonka kaltaista sinulla ei ole milloinkaan ollut? Kenties näet itsesi pysyvänä osana naapurustoa, jossa lähimmäisenrakkaus ja yhteisöllinen tekeminen ovat osa jokapäiväistä arkea? Me kutsumme sinut ilomielin seuraamme! Täytä alla oleva hakemus ja liity osaksi Aamunsarastuksen mökkiseuraa jo tänään!<br /><br />Meille tervetulleita ovat niin eläkepäiviään viettävät seniorit kuin lapsiperheetkin!<br /><br />HUOM! Emme ota vastaan mökkivarauksia tai ostotarjouksia!!!! Vapaana olevat mökit TARJOTAAN yhteisömme jäsenten käyttöön liittymisjärjestystä kunnioittaen ja hyväksymme uusia jäseniä seuraamme aina mökkien vapautuessa."
+      }
+    ],
     "questions": [
       {
         "q": "Kysymys",
@@ -48,17 +51,13 @@
     "send": "Lähetä",
     "reset": "Tyhjennä"
   },
-  "calendar": {
-    "title": "Kalenteri",
+  "inner-circle": {
+    "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
-    "dates": [
+    "content": [
       {
-        "date": "1.1.2001",
-        "event": "Mökkivaraus"
-      },
-      {
-        "date": "2.1.2001",
-        "event": "Mökkivaraus"
+        "title": "OtsikkO",
+        "text": "tekstii"
       }
     ]
   },

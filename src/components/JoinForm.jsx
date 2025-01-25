@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import UserContext from "../util/UserContext";
 import PageIntro from "./PageIntro";
 import { useNavigate } from "react-router-dom";
+import Content from "./Content";
 
 function JoinForm() {
   const { phase, initPhaseTwo } = useContext(UserContext);
@@ -10,6 +11,7 @@ function JoinForm() {
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
   const navigate = useNavigate();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     if (phase !== 1) {
@@ -54,7 +56,8 @@ function JoinForm() {
       // phase two starts
       initPhaseTwo();
     } else {
-      console.log("Wrong answers");
+      setError(true);
+      clearAll();
     }
   };
 
@@ -63,9 +66,18 @@ function JoinForm() {
     setAnswers((prev) => prev.map((q) => ({ ...q, userInput: "" })));
   };
 
+  // handle enter key
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      checkAnswers();
+    }
+  };
+
   return (
     <div className="join-form">
       <PageIntro data={tr} />
+
+      <Content data={tr.content} />
 
       <ul>
         {answers.map((q, i) => (
@@ -76,10 +88,18 @@ function JoinForm() {
               placeholder={q.a}
               value={q.userInput}
               onChange={(e) => handleInputChange(e.target.value, i)}
+              onKeyDown={handleKeyDown}
             />
           </li>
         ))}
       </ul>
+
+      {error && (
+        <p>
+          VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
+          vuoksi. Ehkä kannattaisi miettiä hieman.
+        </p>
+      )}
 
       <button onClick={() => checkAnswers()}>{tr.send}</button>
       <button onClick={() => clearAll()}>{tr.reset}</button>
