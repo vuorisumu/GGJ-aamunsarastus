@@ -64,6 +64,13 @@ function JoinForm() {
     setAnswers((prev) => prev.map((q) => ({ ...q, userInput: "" })));
   };
 
+  // handle enter key
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      checkAnswers();
+    }
+  };
+
   return (
     <div className="join-form">
       <PageIntro data={tr} />
@@ -79,6 +86,7 @@ function JoinForm() {
               placeholder={q.a}
               value={q.userInput}
               onChange={(e) => handleInputChange(e.target.value, i)}
+              onKeyDown={handleKeyDown}
             />
           </li>
         ))}
