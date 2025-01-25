@@ -8,26 +8,38 @@
 }
 
 .join-form ul {
+  margin: auto;
+  max-width: 600px;
+  padding: 15px;
+  margin-top: 15px;
   list-style: none;
-  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 20px;
 }
 .join-form ul li {
-  padding: 5px 0;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 .join-form ul li.false {
   border: 1px solid red;
 }
 .join-form ul li label {
   display: block;
-  width: 100%;
+  width: 97%;
   padding: 2px;
   margin: 2px 0;
 }
 .join-form ul li input {
   display: block;
-  width: 100%;
+  width: 97%;
   padding: 2px;
   margin: 2px 0;
+}
+.join-form .under-form {
+  margin: auto;
+  max-width: 600px;
+  padding: 15px;
+  text-align: center;
 }
 
 header nav {

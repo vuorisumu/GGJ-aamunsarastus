@@ -93,16 +93,17 @@ function JoinForm() {
           </li>
         ))}
       </ul>
+      <div className="under-form">
+        {error && (
+          <p>
+            VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
+            vuoksi. Ehkä kannattaisi miettiä hieman.
+          </p>
+        )}
 
-      {error && (
-        <p>
-          VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
-          vuoksi. Ehkä kannattaisi miettiä hieman.
-        </p>
-      )}
-
-      <button onClick={() => checkAnswers()}>{tr.send}</button>
-      <button onClick={() => clearAll()}>{tr.reset}</button>
+        <button onClick={() => checkAnswers()}>{tr.send}</button>
+        <button onClick={() => clearAll()}>{tr.reset}</button>
+      </div>
     </div>
   );
 }
