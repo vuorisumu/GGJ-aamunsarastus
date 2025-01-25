@@ -87,13 +87,28 @@ header.phase3 nav ul li:not(:first-child) a {
   color: var(--text-primary);
   min-height: 100vh;
 }
+#wrapper button {
+  padding: 8px 13px;
+  border: 0;
+  background-color: var(--accent-primary);
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: 600;
+}
 #wrapper.phase2 {
   background-color: black;
   color: red;
 }
+#wrapper.phase2 button {
+  background-color: red;
+}
 #wrapper.phase3 {
   background-color: white;
   color: black;
+}
+#wrapper.phase3 button {
+  background-color: white;
+  outline: 1px solid black;
 }
 
 main {
