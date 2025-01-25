@@ -4,13 +4,23 @@ import Nav from "./components/Nav";
 import JoinForm from "./components/JoinForm";
 import Footer from "./components/Footer";
 import UserContext from "./util/UserContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Calendar from "./components/Calendar";
-import { getProgress, setProgress } from "./util/progress";
+import { getProgress, getStartTime, setProgress } from "./util/progress";
 import About from "./components/About";
 
 function App() {
   const [phase, setPhase] = useState(getProgress());
+
+  useEffect(() => {
+    if (phase === 2) {
+      const interval = setInterval(() => {
+        const elapsedTime = new Date() - getStartTime();
+        console.log(elapsedTime);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [phase]);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");

@@ -1,7 +1,7 @@
 export const setProgress = (phase) => {
   localStorage.setItem("phase", phase);
   if (phase === 2) {
-    localStorage.setItem("start", Date.now());
+    localStorage.setItem("start", new Date());
   }
 };
 
