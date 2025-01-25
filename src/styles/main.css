@@ -60,6 +60,9 @@ header nav ul li:not(:first-child) a {
   text-decoration: none;
   font-size: 14pt;
 }
+header.phase1 {
+  color: var(--link-color);
+}
 header.phase2 {
   color: red;
 }
@@ -220,6 +223,11 @@ main.phase2 .password {
   padding-bottom: 50px;
   margin: auto;
   text-align: center;
+  z-index: 3;
+  position: relative;
+}
+main.phase2 .password button {
+  margin-left: 10px;
 }
 main.phase3 .center-text p {
   z-index: 2;

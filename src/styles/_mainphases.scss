@@ -164,6 +164,11 @@ main {
       padding-bottom: 50px;
       margin: auto;
       text-align: center;
+      z-index: 3;
+      position: relative;
+      button {
+        margin-left: 10px;
+      }
     }
   }
 
