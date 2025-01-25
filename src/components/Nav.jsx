@@ -14,6 +14,9 @@ function Nav() {
         <li>
           <NavLink to="/">Etusivu</NavLink>
         </li>
+        <li>
+          <NavLink to="/about">Tietoa Meistä</NavLink>
+        </li>
         {phase === 1 && (
           <li>
             <NavLink to="/liity">Liity</NavLink>

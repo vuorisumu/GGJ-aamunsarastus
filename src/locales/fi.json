@@ -21,6 +21,17 @@
       }
     ]
   },
+  "about": {
+    "img": "Puita.jpg",
+    "title": "Tietoa meistä",
+    "description": "Jee",
+    "content": [
+      {
+        "title": "Otsikko",
+        "text": "Tekstiä"
+      }
+    ]
+  },
   "join-us": {
     "title": "Liittymislomake",
     "description": "Täytä lomake ja liity meihin!",

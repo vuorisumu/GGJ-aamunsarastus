@@ -7,6 +7,7 @@ import UserContext from "./util/UserContext";
 import { useState } from "react";
 import Calendar from "./components/Calendar";
 import { getProgress, setProgress } from "./util/progress";
+import About from "./components/About";
 
 function App() {
   const [phase, setPhase] = useState(getProgress());
@@ -40,6 +41,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/about" element={<About />} />
             <Route path="/liity" element={<JoinForm />} />
             <Route path="/calendar" element={<Calendar />} />
           </Routes>
