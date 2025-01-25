@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import UserContext from "../util/UserContext";
 
 function JoinForm() {
+  const { setPhase } = useContext(UserContext);
   const { t } = useTranslation();
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
@@ -25,15 +27,15 @@ function JoinForm() {
   };
 
   // check if all answers are correct
-  const checkAnswers = () => [
-    answers.map((a) => {
-      if (a.userInput.toLowerCase() === a.a.toLowerCase()) {
-        console.log(a.q, "oikein");
-      } else {
-        console.log(a.q, "väärin");
-      }
-    }),
-  ];
+  const checkAnswers = () => {
+    const allCorrect = answers.every(
+      (a) => a.userInput.toLowerCase() === a.a.toLowerCase()
+    );
+
+    if (allCorrect) {
+      setPhase(1);
+    }
+  };
 
   // clear all input fields
   const clearAll = () => {
