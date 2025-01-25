@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import UserContext from "../util/UserContext";
 
 function JoinForm() {
-  const { setPhase } = useContext(UserContext);
+  const { initPhaseTwo } = useContext(UserContext);
   const { t } = useTranslation();
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
@@ -28,12 +28,24 @@ function JoinForm() {
 
   // check if all answers are correct
   const checkAnswers = () => {
+    // for setting the false class to list elements
+    setAnswers((prev) =>
+      prev.map((a) => ({
+        ...a,
+        correct: a.userInput.toLowerCase() === a.a.toLowerCase(),
+      }))
+    );
+
+    // check if all correct
     const allCorrect = answers.every(
       (a) => a.userInput.toLowerCase() === a.a.toLowerCase()
     );
 
     if (allCorrect) {
-      setPhase(1);
+      // phase two starts
+      initPhaseTwo();
+    } else {
+      console.log("Wrong answers");
     }
   };
 
@@ -48,7 +60,7 @@ function JoinForm() {
 
       <ul>
         {answers.map((q, i) => (
-          <li key={`q${i}`}>
+          <li key={`q${i}`} className={q.correct === false ? "false" : ""}>
             <label>{q.q}</label>
             <input
               type="text"

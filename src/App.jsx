@@ -9,8 +9,13 @@ import { useState } from "react";
 function App() {
   const [phase, setPhase] = useState(0);
 
+  const initPhaseTwo = () => {
+    console.log("Phase 2 starts");
+    setPhase(1);
+  };
+
   return (
-    <UserContext.Provider value={{ phase, setPhase }}>
+    <UserContext.Provider value={{ phase, initPhaseTwo }}>
       <Router>
         <header>
           <Nav />
