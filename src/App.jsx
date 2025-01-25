@@ -11,16 +11,19 @@ import About from "./components/About";
 
 function App() {
   const [phase, setPhase] = useState(getProgress());
+  const [popup, setPopup] = useState(false);
 
   useEffect(() => {
-    if (phase === 2) {
+    if (phase === 2 && popup === false) {
       const interval = setInterval(() => {
         const elapsedTime = new Date() - getStartTime();
-        console.log(elapsedTime);
+        if (elapsedTime > 5000) {
+          setPopup(true);
+        }
       }, 5000);
       return () => clearInterval(interval);
     }
-  }, [phase]);
+  }, [phase, popup]);
 
   const initPhaseTwo = () => {
     console.log("Phase 2 starts");
@@ -57,6 +60,12 @@ function App() {
           </Routes>
         </main>
 
+        {popup && (
+          <div className="popup">
+            <h2>MORJESTA</h2>
+            <p>Etpäs arvannukkaan että tulen täältä tällee</p>
+          </div>
+        )}
         <Footer />
       </Router>
     </UserContext.Provider>
