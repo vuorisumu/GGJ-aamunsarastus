@@ -63,6 +63,12 @@ header.phase2 {
 header.phase2 nav {
   background-color: rgb(0, 0, 0);
 }
+header.phase2 nav ul li:not(:first-child) {
+  background-color: #fff;
+}
+header.phase2 nav ul li:not(:first-child) a {
+  color: red;
+}
 #wrapper {
   background: var(--primary-color);
   color: var(--text-primary);

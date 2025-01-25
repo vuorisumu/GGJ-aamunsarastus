@@ -3,7 +3,6 @@ import PageIntro from "./PageIntro";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../util/UserContext";
 import { useNavigate } from "react-router-dom";
-import Content from "./Content";
 import pentagram from "../../public/images/penta.png";
 
 function InnerCircle() {

@@ -44,6 +44,12 @@ header {
 
     nav {
       background-color: rgb(0, 0, 0);
+      ul li:not(:first-child) {
+        background-color: #fff;
+        a {
+          color: red;
+        }
+      }
     }
   }
 
