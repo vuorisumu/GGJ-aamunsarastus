@@ -11,6 +11,7 @@ function JoinForm() {
   const tr = t("join-us", { returnObjects: true });
   const [answers, setAnswers] = useState([]);
   const navigate = useNavigate();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     if (phase !== 1) {
@@ -55,7 +56,7 @@ function JoinForm() {
       // phase two starts
       initPhaseTwo();
     } else {
-      console.log("Wrong answers");
+      setError(true);
     }
   };
 
@@ -91,6 +92,13 @@ function JoinForm() {
           </li>
         ))}
       </ul>
+
+      {error && (
+        <p>
+          VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
+          vuoksi. Ehkä kannattaisi miettiä hieman.
+        </p>
+      )}
 
       <button onClick={() => checkAnswers()}>{tr.send}</button>
       <button onClick={() => clearAll()}>{tr.reset}</button>
