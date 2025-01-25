@@ -48,6 +48,9 @@ header.phase3 nav {
   color: red;
 }
 
+main {
+  padding: 0 30px;
+}
 main.phase3 {
   background-color: black;
 }
@@ -107,6 +110,7 @@ nav ul li:first-child {
 
 section {
   background: var(--secondary-color);
+  padding: 20px 40px;
 }
 
 .comments section {

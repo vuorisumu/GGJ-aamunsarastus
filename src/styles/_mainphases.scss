@@ -1,45 +1,47 @@
 @use "colors";
 
 #wrapper {
-    background: colors.$primary-color;
-    color: colors.$text-primary;
-    min-height: 100vh;
+  background: colors.$primary-color;
+  color: colors.$text-primary;
+  min-height: 100vh;
 
-    &.phase3 {
-        background-color: black;
-        color: red;
-    }
+  &.phase3 {
+    background-color: black;
+    color: red;
+  }
 }
 
 main {
-    &.phase1 {
+  padding: 0 30px;
+
+  &.phase1 {
+  }
+
+  &.phase2 {
+  }
+
+  &.phase3 {
+    background-color: black;
+
+    .banner {
+      height: 9rem;
     }
 
-    &.phase2 {
+    section {
+      background-color: red;
     }
 
-    &.phase3 {
-        background-color: black;
+    #admins section {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      background-color: black;
 
-        .banner {
-            height: 9rem;
-        }
-
-        section {
-            background-color: red;
-        }
-
-        #admins section {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            background-color: black;
-
-            img {
-                width: 150px;
-                height: 150px;
-                margin-right: 20px;
-            }
-        }
+      img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+      }
     }
+  }
 }
