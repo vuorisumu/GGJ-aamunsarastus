@@ -1,3 +1,15 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li:first-child {
+  flex-grow: 1;
+}
+
 .banner {
   overflow: hidden;
   width: 100%;
