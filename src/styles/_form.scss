@@ -1,8 +1,15 @@
 .join-form {
   ul {
+    list-style: none;
+    padding: 0;
+
     li {
       &.false {
         border: 1px solid red;
+      }
+
+      label {
+        display: block;
       }
     }
   }

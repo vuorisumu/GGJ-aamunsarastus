@@ -1,3 +1,10 @@
+.join-form ul {
+  list-style: none;
+  padding: 0;
+}
 .join-form ul li.false {
   border: 1px solid red;
+}
+.join-form ul li label {
+  display: block;
 }/*# sourceMappingURL=form.css.map */
