@@ -42,4 +42,19 @@ nav ul li:first-child {
 
 section {
   background: var(--secondary-color);
+}
+
+.comments section {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: start;
+}
+.comments section p {
+  margin: 0;
+}
+.comments section .from .user {
+  font-weight: 600;
+}
+.comments section .from .date {
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */

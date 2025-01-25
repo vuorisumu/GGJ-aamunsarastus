@@ -43,3 +43,25 @@ nav {
 section {
   background: colors.$secondary-color;
 }
+
+.comments {
+  section {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: start;
+
+    p {
+      margin: 0;
+    }
+
+    .from {
+      .user {
+        font-weight: 600;
+      }
+
+      .date {
+        font-style: italic;
+      }
+    }
+  }
+}
