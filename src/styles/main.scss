@@ -67,34 +67,6 @@ section {
   }
 }
 
-.popup {
-  position: fixed;
-  bottom: 0;
-  z-index: 3;
-  background: rgb(120, 10, 10);
-  padding-top: 28px;
-
-  &.closed {
-    height: 0;
-  }
-
-  button {
-    float: right;
-    margin-top: -23px;
-    margin-right: 5px;
-    background: black;
-    border: 0;
-    color: red;
-  }
-
-  h2,
-  p {
-    margin: 5px;
-    padding: 10px;
-    background: colors.$primary-color;
-  }
-}
-
 footer {
   p {
     margin: 0;

@@ -10,7 +10,6 @@
     border: 0;
     background-color: colors.$accent-primary;
     border-radius: 10px;
-    margin: 0 10px;
     font-weight: 600;
   }
 
@@ -20,6 +19,34 @@
 
     button {
       background-color: red;
+    }
+
+    .popup {
+      position: fixed;
+      bottom: 0;
+      z-index: 3;
+      background: rgb(120, 10, 10);
+      padding-top: 40px;
+
+      &.closed {
+        height: 0;
+      }
+
+      button {
+        float: right;
+        margin-top: -35px;
+        margin-right: 5px;
+        background: black;
+        border: 0;
+        color: red;
+      }
+
+      h2,
+      p {
+        margin: 5px;
+        padding: 10px;
+        background: colors.$primary-color;
+      }
     }
   }
 
@@ -90,7 +117,14 @@ main {
     }
 
     .banner {
-      height: 9rem;
+      height: 11rem;
+      .texts {
+        background: rgba(0, 0, 0, 0.275);
+        h1,
+        p {
+          color: white;
+        }
+      }
     }
 
     section {

@@ -92,7 +92,6 @@ header.phase3 nav ul li:not(:first-child) a {
   border: 0;
   background-color: var(--accent-primary);
   border-radius: 10px;
-  margin: 0 10px;
   font-weight: 600;
 }
 #wrapper.phase2 {
@@ -101,6 +100,30 @@ header.phase3 nav ul li:not(:first-child) a {
 }
 #wrapper.phase2 button {
   background-color: red;
+}
+#wrapper.phase2 .popup {
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: rgb(120, 10, 10);
+  padding-top: 40px;
+}
+#wrapper.phase2 .popup.closed {
+  height: 0;
+}
+#wrapper.phase2 .popup button {
+  float: right;
+  margin-top: -35px;
+  margin-right: 5px;
+  background: black;
+  border: 0;
+  color: red;
+}
+#wrapper.phase2 .popup h2,
+#wrapper.phase2 .popup p {
+  margin: 5px;
+  padding: 10px;
+  background: var(--primary-color);
 }
 #wrapper.phase3 {
   background-color: white;
@@ -155,7 +178,14 @@ main.phase2 .glow-image {
   filter: drop-shadow(0 0px 5px rgb(255, 6, 6)) saturate(1);
 }
 main.phase2 .banner {
-  height: 9rem;
+  height: 11rem;
+}
+main.phase2 .banner .texts {
+  background: rgba(0, 0, 0, 0.275);
+}
+main.phase2 .banner .texts h1,
+main.phase2 .banner .texts p {
+  color: white;
 }
 main.phase2 section {
   background-color: #611313;
@@ -251,31 +281,6 @@ section h2 {
 }
 .comments section .from .date {
   font-style: italic;
-}
-
-.popup {
-  position: fixed;
-  bottom: 0;
-  z-index: 3;
-  background: rgb(120, 10, 10);
-  padding-top: 28px;
-}
-.popup.closed {
-  height: 0;
-}
-.popup button {
-  float: right;
-  margin-top: -23px;
-  margin-right: 5px;
-  background: black;
-  border: 0;
-  color: red;
-}
-.popup h2,
-.popup p {
-  margin: 5px;
-  padding: 10px;
-  background: var(--primary-color);
 }
 
 footer p {
