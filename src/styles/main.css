@@ -7,6 +7,10 @@
   --link-color: #2e7d18;
 }
 
+.centered {
+  text-align: center;
+}
+
 .join-form ul {
   margin: auto;
   max-width: 600px;

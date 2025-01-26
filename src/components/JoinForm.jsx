@@ -85,6 +85,7 @@ function JoinForm() {
 
       <Content data={tr.content} />
 
+      <h2 className="centered">Liittymislomake</h2>
       <ul>
         {answers.map((q, i) => (
           <li key={`q${i}`} className={q.correct === false ? "false" : ""}>
