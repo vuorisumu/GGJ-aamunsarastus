@@ -41,12 +41,16 @@
     ],
     "questions": [
       {
-        "q": "Kysymys",
-        "a": ["Käki", "Käen"]
+        "q": "Kuinka monta airoa olet pudottanut avantoon?",
+        "a": ["2", "Kaksi"]
       },
       {
-        "q": "Kysymys 2",
-        "a": ["2", "Kaksi"]
+        "q": "Kuka kutsuu nimeäsi iltahämärän laskeuduttua?",
+        "a": ["Kuukkeli"]
+      },
+      {
+        "q": "Minkä laulua et toivo kuulevasi?",
+        "a": ["Käki", "Käen", "Käen laulu", "Käen laulua"]
       }
     ],
     "send": "Lähetä",

@@ -91,7 +91,7 @@ function JoinForm() {
             <label>{q.q}</label>
             <input
               type="text"
-              placeholder={q.a}
+              placeholder={"Vastaus"}
               value={q.userInput}
               onChange={(e) => handleInputChange(e.target.value, i)}
               onKeyDown={handleKeyDown}
