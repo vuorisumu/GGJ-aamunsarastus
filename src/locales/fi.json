@@ -42,11 +42,11 @@
     "questions": [
       {
         "q": "Kysymys",
-        "a": "Oikea vastaus"
+        "a": ["Käki", "Käen"]
       },
       {
         "q": "Kysymys 2",
-        "a": "Oikea vastaus"
+        "a": ["2", "Kaksi"]
       }
     ],
     "send": "Lähetä",

@@ -43,13 +43,19 @@ function JoinForm() {
     setAnswers((prev) =>
       prev.map((a) => ({
         ...a,
-        correct: a.userInput.toLowerCase() === a.a.toLowerCase(),
+        correct: a.a.some(
+          (correctAnswer) =>
+            correctAnswer.toLowerCase() === a.userInput.toLowerCase()
+        ),
       }))
     );
 
     // check if all correct
-    const allCorrect = answers.every(
-      (a) => a.userInput.toLowerCase() === a.a.toLowerCase()
+    const allCorrect = answers.every((a) =>
+      a.a.some(
+        (correctAnswer) =>
+          correctAnswer.toLowerCase() === a.userInput.toLowerCase()
+      )
     );
 
     if (allCorrect) {
