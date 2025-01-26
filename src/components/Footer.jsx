@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className={`phase${phase}`}>
-      <p>Aamunsarastuksen Mökkiseura 2022</p>
+      <p>Aamunsarastuksen Mökkiseura 2025</p>
     </footer>
   );
 }
