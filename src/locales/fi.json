@@ -74,7 +74,7 @@
     "reset": "Tyhjennä"
   },
   "inner-circle": {
-    "img": "cottage.jpg",
+    "img": "dark.jpg",
     "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
     "imagedisplay": [
@@ -82,10 +82,10 @@
         "img": "sacrifice.png"
       },
       {
-        "img": "sac2.jpg"
+        "img": "stop.jpg"
       },
       {
-        "img": "sac3.jpg"
+        "img": "dark2.jpg"
       }
     ],
     "background-image": "penta.png",

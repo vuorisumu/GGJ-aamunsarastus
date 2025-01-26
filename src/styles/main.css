@@ -248,10 +248,11 @@ main.phase2 .image-display section {
   align-items: center;
   flex-direction: column;
   background-color: black;
+  overflow: hidden;
+  height: 150px;
 }
 main.phase2 .image-display section img {
-  width: 150px;
-  height: 150px;
+  height: 100%;
   margin-right: 20px;
 }
 main.phase2 .password {
