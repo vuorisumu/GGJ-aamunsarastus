@@ -257,6 +257,9 @@ main.phase2 .password {
 main.phase2 .password button {
   margin-left: 10px;
 }
+main.phase2 .password input.false {
+  outline: 3px solid red;
+}
 main.phase3 .center-text p {
   z-index: 2;
   position: relative;

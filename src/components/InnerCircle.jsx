@@ -10,6 +10,7 @@ function InnerCircle() {
   const tr = t("inner-circle", { returnObjects: true });
   const [input, setInput] = useState("");
   const navigate = useNavigate();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     if (phase !== 2) {
@@ -22,6 +23,7 @@ function InnerCircle() {
       initPhaseThree();
     } else {
       setInput("");
+      setError(true);
     }
   };
 
@@ -71,6 +73,7 @@ function InnerCircle() {
         <h2>Ylläpito:</h2>
         <input
           type="password"
+          className={`${error ? "false" : ""}`}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}

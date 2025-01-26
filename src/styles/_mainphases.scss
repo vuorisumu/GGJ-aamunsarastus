@@ -182,6 +182,10 @@ main {
       button {
         margin-left: 10px;
       }
+
+      input.false {
+        outline: 3px solid red;
+      }
     }
   }
 
