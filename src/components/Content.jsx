@@ -9,6 +9,14 @@ function Content({ data }) {
           <section key={`section${i}`}>
             {c.title && <h2>{c.title}</h2>}
 
+            {c.images && (
+              <div className="image">
+                {c.images.map((img, i) => (
+                  <img key={`img${i}`} src={`/images/${img}`} />
+                ))}
+              </div>
+            )}
+
             {c.text && (
               <p>
                 <Trans i18nKey={`text.${i}`} components={[<br />]}>
