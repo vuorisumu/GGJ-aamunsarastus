@@ -68,11 +68,13 @@ function InnerCircle() {
       </div>
 
       <div className="password">
+        <h2>Ylläpito:</h2>
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
+          placeholder="Anna salasana"
         />
         <button onClick={() => checkInput()}>Lähetä</button>
       </div>
