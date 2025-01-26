@@ -70,7 +70,7 @@ function InnerCircle() {
       <div className="password">
         <h2>Ylläpito:</h2>
         <input
-          type="text"
+          type="password"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
