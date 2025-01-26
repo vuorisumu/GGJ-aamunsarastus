@@ -248,10 +248,11 @@ main.phase2 .image-display section {
   align-items: center;
   flex-direction: column;
   background-color: black;
+  overflow: hidden;
+  height: 150px;
 }
 main.phase2 .image-display section img {
-  width: 150px;
-  height: 150px;
+  height: 100%;
   margin-right: 20px;
 }
 main.phase2 .password {
@@ -320,6 +321,19 @@ section {
 }
 section h2 {
   margin: 10px 0;
+}
+section .image {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .image img {
+  max-width: 100%;
+}
+section .imagesmall {
+  max-height: 300px;
+  max-width: 300px;
+  float: right;
+  margin-left: 20px;
 }
 
 .comments section {

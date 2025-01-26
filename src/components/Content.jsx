@@ -7,7 +7,18 @@ function Content({ data }) {
       {data.length > 0 &&
         data.map((c, i) => (
           <section key={`section${i}`}>
+            {c.imagesmall && (
+              <img src={`/images/${c.imagesmall}`} className="imagesmall" />
+            )}
             {c.title && <h2>{c.title}</h2>}
+
+            {c.images && (
+              <div className="image">
+                {c.images.map((img, i) => (
+                  <img key={`img${i}`} src={`/images/${img}`} />
+                ))}
+              </div>
+            )}
 
             {c.text && (
               <p>

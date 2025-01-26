@@ -43,6 +43,22 @@ section {
   h2 {
     margin: 10px 0;
   }
+
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .imagesmall {
+    max-height: 300px;
+    max-width: 300px;
+    float: right;
+    margin-left: 20px;
+  }
 }
 
 .comments {
