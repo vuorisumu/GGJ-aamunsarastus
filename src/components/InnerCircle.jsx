@@ -45,6 +45,11 @@ function InnerCircle() {
       </div>
 
       <div className="inner-circle">
+        <img
+          src={"/images/symbol.png"}
+          alt="pentagram"
+          className="glow-image penta"
+        />
         {tr.forum &&
           tr.forum.map((post, i) => (
             <div key={`post${i}`}>
