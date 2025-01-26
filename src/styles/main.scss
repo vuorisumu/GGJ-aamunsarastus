@@ -82,3 +82,43 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+  header nav ul {
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+
+    h2 {
+      font-size: 14pt;
+      margin: 5px 0;
+    }
+
+    li:not(:first-child) {
+      padding: 3px 8px;
+
+      a {
+        font-size: 12pt;
+      }
+    }
+  }
+
+  main {
+    section {
+      padding: 5px 15px;
+    }
+    .banner {
+      .texts {
+        padding: 0 10px;
+        h1 {
+          font-size: 18pt;
+        }
+      }
+    }
+  }
+
+  .video-container {
+    video {
+      max-width: 100%;
+    }
+  }
+}
