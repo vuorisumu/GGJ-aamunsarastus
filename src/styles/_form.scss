@@ -11,6 +11,10 @@
   padding: 15px;
 }
 
+.centered {
+  text-align: center;
+}
+
 .join-form {
   ul {
     @include formSize();

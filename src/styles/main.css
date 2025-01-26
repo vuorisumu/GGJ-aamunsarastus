@@ -7,6 +7,10 @@
   --link-color: #2e7d18;
 }
 
+.centered {
+  text-align: center;
+}
+
 .join-form ul {
   margin: auto;
   max-width: 600px;
@@ -132,6 +136,13 @@ header.phase3 nav ul li:not(:first-child) a {
 #wrapper.phase2 .popup.closed {
   height: 0;
 }
+#wrapper.phase2 .popup .sender {
+  float: left;
+  color: white;
+  margin-top: -35px;
+  background: none;
+  font-weight: 800;
+}
 #wrapper.phase2 .popup button {
   float: right;
   margin-top: -35px;
@@ -252,6 +263,9 @@ main.phase2 .password {
 }
 main.phase2 .password button {
   margin-left: 10px;
+}
+main.phase2 .password input.false {
+  outline: 3px solid red;
 }
 main.phase3 .center-text p {
   z-index: 2;

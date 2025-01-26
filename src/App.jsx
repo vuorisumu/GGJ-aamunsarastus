@@ -22,7 +22,7 @@ function App() {
       const interval = setInterval(() => {
         if (popup === false) {
           const elapsedTime = new Date() - getStartTime();
-          if (elapsedTime > 5000) {
+          if (elapsedTime > 40000) {
             setPopup(true);
             setPopupStart(new Date());
           }
@@ -76,6 +76,7 @@ function App() {
 
           {popup && phase === 2 && (
             <div className={`${closed ? "closed" : ""} popup`}>
+              <p className="sender">Ylläpito</p>
               <button onClick={() => setClosed(!closed)}>
                 {closed ? "^" : "_"}
               </button>
