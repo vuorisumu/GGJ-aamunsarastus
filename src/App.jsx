@@ -79,14 +79,17 @@ function App() {
               <button onClick={() => setClosed(!closed)}>
                 {closed ? "^" : "_"}
               </button>
-              <h2>MORJESTA</h2>
-              <p>Etpäs arvannukkaan että tulen täältä tällee</p>
+              <p>Kas kas...</p>
 
-              {time > 5 && <p>HALOO</p>}
+              {time > 5 && <p>Täällä sitä ollaan…</p>}
 
-              {time > 10 && <p>AUAAA</p>}
+              {time > 10 && <h2>ULKOPUOLINEN </h2>}
 
-              {time > 15 && <p>auta...</p>}
+              {time > 15 && <p>Vihdoin.</p>}
+
+              {time > 20 && <p>Suviheila</p>}
+
+              {time > 25 && <p>JARMON SALIS TÄHÄ</p>}
             </div>
           )}
 
