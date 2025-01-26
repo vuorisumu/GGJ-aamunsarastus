@@ -328,6 +328,11 @@ section .image {
 section .image img {
   max-width: 100%;
 }
+section .imagesmall {
+  max-height: 400px;
+  float: right;
+  margin-left: 20px;
+}
 
 .comments section {
   display: grid;

@@ -8,7 +8,7 @@
         "text": "Vietävänjärven rannan tuntumassa sijaitseva yhteisö toivottaa tervetulleeksi sekä vanhat konkarit että uudet mökkeilijät. Toiminnasta kiinnostuneiden kannattaakin seurata sivuton aktiivisesti, sillä tiivis yhteisömme tarjoaa mahdollisuuden tutustua seuraamme ja tiloihimme aina muutaman kerran vuodessa ja tiedotamme avoimien ovien viikonlopuista aina täällä sivullamme. Uteliaat, pysykää kuulolla!<br /><br />Hakulomake on myös ympärivuotisesti avoinna nille, jotka ovat varmoja mökkihaaveistaan ja haluavat tehdä unelmistaan totta. Uusia paikkoja yhteisössämme on kuitenkin rajatusti, joten joudumme valitettavasti hyväksymään hakemuksista vain ne, jotka vaikuttavat joukkoomme sopivimmilta!<br /><br />Meiltä löydät myös kyläpuodin, joka palvelee sinua maanantaista lauantaihin. Myynnissä muunmuassa seuramme kuuluisaa kotijuustoa, pullaa sekä valikoima lempeästi suolattuja kinkkuja. Tervetuloa ostoksille!<br /><br />Aamun sarastaessa kohtaamme!"
       },
       {
-        "images": ["mokki.jpg", "jarvi.jpg"]
+        "images": ["mokki.jpg"]
       }
     ],
     "comments": [
@@ -36,9 +36,11 @@
     "description": "Aamunsarastuksen mökkiseura on varjellut Vietävänjärven rantoja ja laitumia jo vuodesta 1825!",
     "content": [
       {
+        "imagesmall": "jouskari.jpg",
         "title": "Kohtalokkaat tulvat seuran alullepanijana",
         "text": "Vietävänjärven historiaa varjostaa synkkä menneisyys. Järvi tuli aikojen saatossa tunnetuksi oikukkaasta luonteestaan: milloin se tulvi yli äyräidensä hukuttaen alleen niin viljelysmaat kuin torpatkin, milloin kalakantoja piinasi niukkuus tai sitten taudit tai loiseliöt veivät jo muutoinkin köyhän saaliin. Seudun maa ei tarjonnut otollista viljelysmaata, vaan silti ihmiset yrittivät kaikesta huolimatta sopeutuakseen alueen karuihin oloihin, olivathan heidän esi-isänsäkin jo asuttaneet maata iät ikuiset. Ja kaiken lisäksi, minne he muka voisivat lähteä? Ruuasta oli pulaa jopa seudun vauraimmissakin taloissa. Kylän väki kävi levottomaksi ja pelko asettui taloksi jokaiseen perheeseen. Tuota aikaa paikalliset nimittivät pitkäksi yöksi, sillä kaikki valo tuntui tyystin kaikonneen ihmisten mielistä. Kesällä, vuonna 1825, Vietävänjärvi tulvi ennennäkemättämän paljon. Kohtalokas tulva vei mukanaan sadon, tappoi karjan ja jätti tienoon asukkaat entistä julmemmin kärsimykseensä. Oli selvää, ettei alueen asuttaminen voisi jatkua olosuhteiden riistäessä kaiken toimeentulon. Tuolloin viisaaudestaan ja toimeliaisuudestaan tunnettu mies, Ukko Aarnenpoika, kokosi naapuruston isännät ja emännät koolle ja laati yhdessä heidän kanssaan suunnitelman Vietävänjärven ihmisten tulevaisuuden turvaamiseksi. Niin syntyi Aamunsarastuksen seura. Jo seuraavana keväänä viljelysonni suosi ahertajia, sato kantoi hedelmää ja tienoon niityt vihannoivat runsaampina kuin milloinkaan ennen, jopa kala söi hyvin. Siitä saakka on Aamunruskon seuran perinne elänyt tiiviinä osana paikallisten arkea ja se on kehkeytynyt osaksi täkäläistä identiteettiä."
       },
+
       {
         "title": "Pikkupitäjästä mökkiharrastajien kruununjalokiveksi",
         "text": "Kauas on tultu noista ajoista, kun pitkä yö varjosti nykyään niin kukuistovaa yhteisöämme. Se mikä aikanaan oli pieni kylänpahainen, on aikojen saatossa muovautunut siksi mitä se on nykyisin: idyllinen ja yhteisöllinen mökkiseura. Alkuperäinen Aamunsarastus kulkee silti yhä vahvasti mukana toiminnassamme ja seura se on meillä suorastaan veressä, polveutuuhan suuri osa kiihkeistä mökkiharrastajistamme suoraan tuosta alkuperäisestä Ukko Aarnenpojan alulle panemasta seurueesta.<br /><br />Nykyinen toimintamme keskittyy pääasiassa omavaraisuuden harjoittamisen ympärille. Ruoka tulee omasta maasta ja valmistamme tarpeidemme mukaan esineen kuin esineen, aina kynttilöistä siimoihin. Olemme vuodesta 2018 saakka myös pyörittäneet yhdessä tuumin kyläpuotia, jotta yhteisömme ulkopuolisetkin jäsenet pääsisivät nauttimaan Vietävänjärven antimista!"
