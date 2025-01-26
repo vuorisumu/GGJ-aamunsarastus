@@ -79,24 +79,87 @@
     ],
     "background-image": "penta.png",
     "forum": [
-      {
-        "title": "Otsikko",
-        "user": "Nimi Sukunimi",
-        "date": "1.1.2001",
-        "text": "Contenttii"
-      },
-      {
-        "title": "Otsikko",
-        "user": "Nimi Sukunimi",
-        "date": "1.1.2001",
-        "text": "Contenttii"
-      },
-      {
-        "title": "Otsikko",
-        "user": "Nimi Sukunimi",
-        "date": "1.1.2001",
-        "text": "Contenttii"
-      }
+      [
+        {
+          "user": "V.J",
+          "text": "Ongelma \"P\" hoideltu."
+        },
+        {
+          "user": "I.H",
+          "text": "mikä ihmeen P"
+        },
+        {
+          "user": "V.J",
+          "text": "Joko unohdit kuka rikkoi salassapitovalaamme:D ”Paarma” nitistetty."
+        },
+        {
+          "user": "L.O",
+          "text": "RIP vanha kunnon Pösilö:D emme jää kaipaamaan."
+        },
+        {
+          "user": "I.H",
+          "text": "J.T. antoi lopulta suostumuksen? Huh, nyt voin taas hengähtää."
+        },
+        {
+          "user": "V.J",
+          "text": "Joskus täytyy tehdä se mikä täytyy, sanoi J.T. mitä hyvänsä."
+        }
+      ],
+      [
+        {
+          "user": "I.H",
+          "text": "Pyydän että päätalon saunaa suolistamis tahi muussa tarkoituksessa käyttävät SIIVOAVAT jälkensä. Ei ole kiva mennä lämmittämään kiuasta ja huomata sen olevan täynnä ties mitä möhnää. HÄVETKÄÄ, aikuiset ihmiset."
+        }
+      ],
+      [
+        {
+          "user": "V.J",
+          "text": "Se mistä puhuimme viime kokoontumisesta, ehdotan etä järjestämme äänestyksen. Ei ole oikein, että yksi ihminen sanelee kuinka tehdään kun kyseessä on meidän kaikkien tulevaisuus."
+        },
+        {
+          "user": "J.J"
+        },
+        {
+          "user": "L.O"
+        },
+        {
+          "user": "I.H"
+        },
+        {
+          "user": "Y.T"
+        },
+        {
+          "user": "J.T",
+          "text": "Asiasta ei keskustella."
+        },
+        {
+          "user": "V.J"
+        },
+        {
+          "user": "V.J"
+        },
+        {
+          "user": "V.J"
+        }
+      ],
+      [
+        {
+          "user": "I.H",
+          "text": "Saunatuvasta kynttilät loppu."
+        },
+        {
+          "user": "V.V",
+          "text": "Tiedossa. Läski on loppu niin ei olla voitu tehdä uusia. Täytyy odottaa vakkoihin saakka."
+        },
+        {
+          "user": "I.H",
+          "text": "Selvä juttu!"
+        },
+        {
+          "user": "L.O",
+          "text": "Kioskin kylmiössä vielä purkillinen ihraa. Viimeinen hylly vasemmalla, punainen purkki."
+        }
+      ]
     ]
   },
   "admin": {

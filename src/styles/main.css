@@ -190,12 +190,24 @@ main.phase2 .inner-circle div {
   padding: 15px 10px;
   max-width: 700px;
   margin: 20px auto;
+  display: grid;
 }
-main.phase2 .inner-circle div .user {
-  font-weight: 600;
+main.phase2 .inner-circle div .comment {
+  width: 100%;
+  margin: 3px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 40px auto;
 }
-main.phase2 .inner-circle div .date {
+main.phase2 .inner-circle div .comment p {
+  padding: 0 10px;
+}
+main.phase2 .inner-circle div .comment .user {
+  font-weight: 800;
+}
+main.phase2 .inner-circle div .comment .removed {
   font-style: italic;
+  font-weight: 200;
 }
 main.phase2 .glow-image {
   filter: drop-shadow(0 0px 5px rgb(255, 6, 6)) saturate(1);

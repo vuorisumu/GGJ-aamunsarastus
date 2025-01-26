@@ -109,13 +109,26 @@ main {
         padding: 15px 10px;
         max-width: 700px;
         margin: 20px auto;
+        display: grid;
 
-        .user {
-          font-weight: 600;
-        }
+        .comment {
+          width: 100%;
+          margin: 3px 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: 40px auto;
+          p {
+            padding: 0 10px;
+          }
 
-        .date {
-          font-style: italic;
+          .user {
+            font-weight: 800;
+          }
+
+          .removed {
+            font-style: italic;
+            font-weight: 200;
+          }
         }
       }
     }

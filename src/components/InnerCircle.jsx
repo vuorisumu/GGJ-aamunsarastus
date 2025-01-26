@@ -50,12 +50,18 @@ function InnerCircle() {
       <div className="inner-circle">
         <img src={pentagram} alt="pentagram" className="glow-image penta" />
         {tr.forum &&
-          tr.forum.map((p, i) => (
-            <div key={`p${i}`}>
-              <h2>{p.title}</h2>
-              <p className="user">{p.user}</p>
-              <p className="date">{p.date}</p>
-              <p className="text">{p.text}</p>
+          tr.forum.map((post, i) => (
+            <div key={`post${i}`}>
+              {post.map((c, j) => (
+                <div key={`comment${j}`} className="comment">
+                  <p className="user">{c.user}:</p>
+                  {c.text ? (
+                    <p className="text">{c.text}</p>
+                  ) : (
+                    <p className="removed">{`<Ylläpitäjä on poistanut kommentin>`}</p>
+                  )}
+                </div>
+              ))}
             </div>
           ))}
       </div>
