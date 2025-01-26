@@ -89,7 +89,7 @@ function App() {
 
               {time > 20 && <p>Suviheila</p>}
 
-              {time > 25 && <p>JARMON SALIS TÄHÄ</p>}
+              {time > 25 && <p>p35udHjj876vH</p>}
             </div>
           )}
 
