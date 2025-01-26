@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-key */
+import { Trans } from "react-i18next";
+
 function CommentSection({ data }) {
   return (
     <section className="comments">
@@ -7,9 +10,12 @@ function CommentSection({ data }) {
           <section key={`comment${i}`}>
             <div className="from">
               <p className="user">{c.user}</p>
-              <p className="date">{c.date}</p>
             </div>
-            <p className="comment">{c.comment}</p>
+            <p className="comment">
+              <Trans i18nKey={`comments.${i}`} components={[<a />]}>
+                {c.comment}
+              </Trans>
+            </p>
           </section>
         ))
       ) : (
