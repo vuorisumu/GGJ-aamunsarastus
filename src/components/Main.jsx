@@ -4,7 +4,7 @@ import Content from "./Content";
 import CommentSection from "./CommentSection";
 import { useContext } from "react";
 import UserContext from "../util/UserContext";
-import vid from "../../public/videos/ad_compr.mp4";
+import vid from "/videos/ad_compr.mp4";
 
 function Main() {
   const { clearPhase } = useContext(UserContext);
