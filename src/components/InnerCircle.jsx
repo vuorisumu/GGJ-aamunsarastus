@@ -3,7 +3,7 @@ import PageIntro from "./PageIntro";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../util/UserContext";
 import { useNavigate } from "react-router-dom";
-import Content from "./Content";
+import pentagram from "../../public/images/penta.png";
 
 function InnerCircle() {
   const { phase, initPhaseThree } = useContext(UserContext);
@@ -36,16 +36,45 @@ function InnerCircle() {
   return (
     <div>
       <PageIntro data={tr} />
+      <div className="image-display">
+        {tr.imagedisplay &&
+          tr.imagedisplay.map((image, i) => (
+            <section key={`img${i}`}>
+              <img src={`./images/${image.img}`} />
+              <h2>{image.title}</h2>
+              <p>{image.description}</p>
+            </section>
+          ))}
+      </div>
 
-      <Content data={tr.content} />
+      <div className="inner-circle">
+        <img src={pentagram} alt="pentagram" className="glow-image penta" />
+        {tr.forum &&
+          tr.forum.map((post, i) => (
+            <div key={`post${i}`}>
+              {post.map((c, j) => (
+                <div key={`comment${j}`} className="comment">
+                  <p className="user">{c.user}:</p>
+                  {c.text ? (
+                    <p className="text">{c.text}</p>
+                  ) : (
+                    <p className="removed">{`<Ylläpitäjä on poistanut kommentin>`}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          ))}
+      </div>
 
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        onKeyDown={handleKeyDown}
-      />
-      <button onClick={() => checkInput()}>Lähetä</button>
+      <div className="password">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+        <button onClick={() => checkInput()}>Lähetä</button>
+      </div>
     </div>
   );
 }

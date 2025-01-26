@@ -10,9 +10,20 @@
     ],
     "comments": [
       {
-        "user": "Pekka Peräsalo",
-        "date": "1.1.2001",
-        "comment": "Ihan paskaa"
+        "user": "Arja Mäntyvaara",
+        "comment": " Löysin tänne <0 href=\"https://forum-beta-lac.vercel.app\">https://forum-beta-lac.vercel.app</0> kautta, eikä vaikuta yhtään niin omituiselta kuin siellä väittivät 🙂"
+      },
+      {
+        "user": "PEKKA",
+        "comment": "HÖPÖ HÖPÖ"
+      },
+      {
+        "user": "Arja Mäntyvaara",
+        "comment": "Linkkasin minijälle, etsivät mökkiä 🙂"
+      },
+      {
+        "user": "PEKKA",
+        "comment": "MIÄSI ON IMBESILLI JOS MENEE TÄHÄN HÖYNÄÄN."
       }
     ]
   },
@@ -41,12 +52,16 @@
     ],
     "questions": [
       {
-        "q": "Kysymys",
-        "a": "Oikea vastaus"
+        "q": "Kuinka monta airoa olet pudottanut avantoon?",
+        "a": ["2", "Kaksi"]
       },
       {
-        "q": "Kysymys 2",
-        "a": "Oikea vastaus"
+        "q": "Kuka kutsuu nimeäsi iltahämärän laskeuduttua?",
+        "a": ["Kuukkeli"]
+      },
+      {
+        "q": "Minkä laulua et toivo kuulevasi?",
+        "a": ["Käki", "Käen", "Käen laulu", "Käen laulua"]
       }
     ],
     "send": "Lähetä",
@@ -56,16 +71,120 @@
     "img": "cottage.jpg",
     "title": "Sisäpiiri",
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
-    "content": [
+    "imagedisplay": [
       {
-        "title": "OtsikkO",
-        "text": "tekstii"
+        "img": "sacrifice.png",
+        "title": "Family",
+        "description": "I'm sorry"
+      },
+      {
+        "img": "sac2.jpg",
+        "title": "Brothers",
+        "description": "I'm sorry"
+      },
+      {
+        "img": "sac3.jpg",
+        "title": "Sisters",
+        "description": "I'm sorry"
       }
+    ],
+    "background-image": "penta.png",
+    "forum": [
+      [
+        {
+          "user": "V.J",
+          "text": "Ongelma \"P\" hoideltu."
+        },
+        {
+          "user": "I.H",
+          "text": "mikä ihmeen P"
+        },
+        {
+          "user": "V.J",
+          "text": "Joko unohdit kuka rikkoi salassapitovalaamme:D ”Paarma” nitistetty."
+        },
+        {
+          "user": "L.O",
+          "text": "RIP vanha kunnon Pösilö:D emme jää kaipaamaan."
+        },
+        {
+          "user": "I.H",
+          "text": "J.T. antoi lopulta suostumuksen? Huh, nyt voin taas hengähtää."
+        },
+        {
+          "user": "V.J",
+          "text": "Joskus täytyy tehdä se mikä täytyy, sanoi J.T. mitä hyvänsä."
+        }
+      ],
+      [
+        {
+          "user": "I.H",
+          "text": "Pyydän että päätalon saunaa suolistamis tahi muussa tarkoituksessa käyttävät SIIVOAVAT jälkensä. Ei ole kiva mennä lämmittämään kiuasta ja huomata sen olevan täynnä ties mitä möhnää. HÄVETKÄÄ, aikuiset ihmiset."
+        }
+      ],
+      [
+        {
+          "user": "V.J",
+          "text": "Se mistä puhuimme viime kokoontumisesta, ehdotan etä järjestämme äänestyksen. Ei ole oikein, että yksi ihminen sanelee kuinka tehdään kun kyseessä on meidän kaikkien tulevaisuus."
+        },
+        {
+          "user": "J.J"
+        },
+        {
+          "user": "L.O"
+        },
+        {
+          "user": "I.H"
+        },
+        {
+          "user": "Y.T"
+        },
+        {
+          "user": "J.T",
+          "text": "Asiasta ei keskustella."
+        },
+        {
+          "user": "V.J"
+        },
+        {
+          "user": "V.J"
+        },
+        {
+          "user": "V.J"
+        }
+      ],
+      [
+        {
+          "user": "I.H",
+          "text": "Saunatuvasta kynttilät loppu."
+        },
+        {
+          "user": "V.V",
+          "text": "Tiedossa. Läski on loppu niin ei olla voitu tehdä uusia. Täytyy odottaa vakkoihin saakka."
+        },
+        {
+          "user": "I.H",
+          "text": "Selvä juttu!"
+        },
+        {
+          "user": "L.O",
+          "text": "Kioskin kylmiössä vielä purkillinen ihraa. Viimeinen hylly vasemmalla, punainen purkki."
+        }
+      ]
     ]
   },
   "admin": {
-    "title": "Ylläpitopiirit",
-    "description": "SInister shittii",
+    "manifest": [
+      "Jos luet tätä nyt, se voi merkitä vain yhtä asiaa. Loppua.",
+      "Ensiksi haluan puhutella perhettäni: Hyvä Aamunsarastuksen Mökkiseura, hyvät veljet ja siskot, jos luette tätä niin varmasti olettekin jo aavistaneet, mitä olen aikeissa tehdä. Päätökseni on lopullinen ja nyt on myöhäistä estää se mikä on kohta pahatuva. Aamunsarastuksen aika on tullut päätökseensä ja on aika antaa päivän saapua. Se mitä Te teitte, mitä Te veitte minulta, avasi lopullisesti silmäni, ja ainoa katumukseni on se, että kuljin sokeana niin kauan. Koko ikäni. Aivan kuten tekin, sokeina koko ikänne. On kuin pimeä yö olisi jo kauan sitten ottanut meidät omakseen ja sulkenut meidät sisäänsä niin, ettemme me nähneet, emmekä ymmärtäneet mitä teimme. Tai niin minä todella toivon, ettemme todella ymmärtäneet sitä mitä teimme. Sillä jos teimme sen kaiken täydessä ymmärryksessä, niin me todella ansaitsemme kohtalon, joka on pahempi kuin heidän, joilta me riistimme elämän oman onnemme turvaamiseksi. Esi-isämme perustivat seuramme tavoitteenaan luoda hyvää yhteisölleen, tavoitellakseen pelastusta tilanteessa, jossa kaikki pelastus oli käsien ulottumattomissa. Jos tämä on se hyvä, se pelastus, jonka vuoksi he tekivät kaiken sen mitä tekivät, ja me heidän oppejaan noudattaen teimme kaiken sen minkä teimme, niin on parempi antaa kaiken tämän mennä. Olisi pitänyt jo kauan aikaa sitten antaa kaiken tämän vain loppua.",
+      "Toiseksi haluan puhutella sinua, ulkopuolinen, joka luet tätä. Oletan ja toivon tämän tavoittavan ennemmin tai myöhemmin jonkun, joka ei tunne pimeyttä, kuten me, jotka olemme kasvaneet sen vankeina. Olen toimittanut kopion tästä virkavallalle ja se lienee hyödyksi tutkinnassa, kun Vietävänjärven salaisuus alkaa hiljalleen purkautua. Olen yrittänyt tehdä työnne mahdollisimman helpoksi, en halua vaivata teitä tällä synkällä ja vastenmielisellä tapauksella yhtään enempää kuin on tarpeen. Veljieni ja sisarieni ruumiit olen asetellut perunakellariin ja oletan niiden säilyvän siellä jokseenkin kohtuullisessa kunnossa saapumiseenne saakka. Päätalon keittiön pöydältä löydätte kirjan, johon on laadittu lista menneistä yhteisömme jäsenistä, jotka toimiemme seurauksena ovat menettäneet henkensä. Listalta löytynee myös muutama ulkopuolinen, joiden kohtaloksi koitui puhtaasti pelkkä huono tuuri: väärässä paikassa väärään aikaan. Muunmuassa eräs hiisilehtoomme eksynyt marjastaja, häpeäkseni en muista hänen nimeään, koki valitettavan kohtalon yhteisömme käsissä muutama vuosi sitten. Näistä viattomien surmista olen vilpittömästi pahoillani, mutta tehtyä ei saa tekemättömäksi. Toivon, että tieto heidän kohtalostaan ja tämän kultin lopusta tuo rauhan heidän omaisilleen. Uhrien jäänteitä tuskin tulee milloinkaan löytymään, olemme hyödyntäneet kaiken viimeistä hiuskarvaa myöten. Ja kaikki se mitä päätalo ei teille tarjoa, on todennäköisesti tullut jo liekkien nielemäksi siinä vaiheessa, kun lopulta saavutte Vietävänjärvelle. Kylmiön sisällön läpikäyminen jää tosin teidän vastuullenne, itse en sitä enää ehdi tekemään.",
+      "Ja minusta teidän ei tarvitse huolehtia. Kun sanoin tekeväni lopun tästä kaikesta, minä todella tarkoitin sitä.",
+      "Lopuksi haluan sanoa muutaman asian sinulle Pekka. Tiedän, että sanojen aika on mennyt ja tiedän, että minun on myöhäistä hakea anteeksiantoa teoilleni. Ja tiedän, että mikää määrä sanoja ei koskaan olisi kylliksi.",
+      "Olen pahoillani. ",
+      "Nuo sanat sinun olisi pitäny kuulla huuliltani jo kauan sitten. Anteeksi etten kuunnellut sinua silloin, kun sillä olisi ollut merkitystä. Hylkäsin sinut ja käänsin selkäni sinulle, enkä voi koskaan antaa anteeksi itselleni sitä viimeistä kohtaamistamme, jota en pelkuruuttani en siedä edes muistella. Minä petin sinut ja on minun syytäni, että sinun kävi niin kuin kävi.",
+      "Toivon että kohtaamme vielä, piankin, jos ylipäänsä on edes mahdollista, että tiemme vielä kohtavaat siellä jossain. Minä tiedän, että sinä olet saanut rauhan. Olet paikassa, jonne tämä pimeys ei yllä. Ja minä voin vain toivoa, että se mikä minua odottaa, on armollisempaa, kuin sen minkä uskon itse ansaitsevani. Jos me vielä tapaamme, lupaan kertoa sinulle tämän kaiken, niin moneen kertaan ja niin monin eri sanoin kuin vain osaan. Ja lupaan valmistaa sinulle niin monta kaunista viehettä, kuin haluat. Ja me menemmä yhdessä kalaan, juomme oluet, muistelemme sitä ”hempeämpää” nuoruuttamme, emme mene nurin emmekä huku, mietitään sellaista sitten jokin toinen kerta, juhannuksena.",
+      "Jarmo Torvinen"
+    ],
     "content": [
       {
         "title": "Otsikko",

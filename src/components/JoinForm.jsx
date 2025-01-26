@@ -43,13 +43,19 @@ function JoinForm() {
     setAnswers((prev) =>
       prev.map((a) => ({
         ...a,
-        correct: a.userInput.toLowerCase() === a.a.toLowerCase(),
+        correct: a.a.some(
+          (correctAnswer) =>
+            correctAnswer.toLowerCase() === a.userInput.toLowerCase()
+        ),
       }))
     );
 
     // check if all correct
-    const allCorrect = answers.every(
-      (a) => a.userInput.toLowerCase() === a.a.toLowerCase()
+    const allCorrect = answers.every((a) =>
+      a.a.some(
+        (correctAnswer) =>
+          correctAnswer.toLowerCase() === a.userInput.toLowerCase()
+      )
     );
 
     if (allCorrect) {
@@ -85,7 +91,7 @@ function JoinForm() {
             <label>{q.q}</label>
             <input
               type="text"
-              placeholder={q.a}
+              placeholder={"Vastaus"}
               value={q.userInput}
               onChange={(e) => handleInputChange(e.target.value, i)}
               onKeyDown={handleKeyDown}
@@ -93,16 +99,17 @@ function JoinForm() {
           </li>
         ))}
       </ul>
+      <div className="under-form">
+        {error && (
+          <p>
+            VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
+            vuoksi. Ehkä kannattaisi miettiä hieman.
+          </p>
+        )}
 
-      {error && (
-        <p>
-          VIRHE. Emme voineet käsitellä hakemustasi odottamattoman virheen
-          vuoksi. Ehkä kannattaisi miettiä hieman.
-        </p>
-      )}
-
-      <button onClick={() => checkAnswers()}>{tr.send}</button>
-      <button onClick={() => clearAll()}>{tr.reset}</button>
+        <button onClick={() => checkAnswers()}>{tr.send}</button>
+        <button onClick={() => clearAll()}>{tr.reset}</button>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 header {
   nav {
+    padding: 0 20px;
     ul {
       list-style: none;
       display: flex;
@@ -37,16 +38,34 @@ header {
   }
 
   &.phase1 {
+    color: colors.$link-color;
   }
 
   &.phase2 {
-  }
-
-  &.phase3 {
     color: red;
 
     nav {
       background-color: rgb(0, 0, 0);
+      ul li:not(:first-child) {
+        background-color: #fff;
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+
+  &.phase3 {
+    color: black;
+
+    nav {
+      background: white;
+      ul li:not(:first-child) {
+        background-color: #fff;
+        a {
+          color: black;
+        }
+      }
     }
   }
 }

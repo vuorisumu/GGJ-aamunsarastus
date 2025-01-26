@@ -31,7 +31,7 @@ function Nav() {
 
         {phase === 3 && (
           <li>
-            <NavLink to="/admin">Ylläpito</NavLink>
+            <NavLink to="/viesti">Viesti</NavLink>
           </li>
         )}
       </ul>

@@ -1,98 +1,207 @@
 @use "colors";
 
 #wrapper {
-    background: colors.$primary-color;
-    color: colors.$text-primary;
-    min-height: 100vh;
+  background: colors.$primary-color;
+  color: colors.$text-primary;
+  min-height: 100vh;
 
-    &.phase3 {
-        background-color: black;
-        color: red;
+  button {
+    padding: 8px 13px;
+    border: 0;
+    background-color: colors.$accent-primary;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  &.phase1 {
+    button {
+      margin-right: 15px;
     }
+  }
+
+  &.phase2 {
+    background-color: black;
+    color: red;
+
+    button {
+      background-color: red;
+    }
+
+    .popup {
+      position: fixed;
+      bottom: 0;
+      z-index: 3;
+      background: rgb(120, 10, 10);
+      padding-top: 40px;
+
+      &.closed {
+        height: 0;
+      }
+
+      button {
+        float: right;
+        margin-top: -35px;
+        margin-right: 5px;
+        background: black;
+        border: 0;
+        color: red;
+      }
+
+      h2,
+      p {
+        margin: 5px;
+        padding: 10px;
+        background: colors.$primary-color;
+      }
+    }
+  }
+
+  &.phase3 {
+    background-color: white;
+    color: black;
+
+    button {
+      background-color: white;
+      outline: 1px solid black;
+    }
+  }
 }
 
 main {
-    padding: 0 30px;
+  padding: 0 30px;
+  max-width: 900px;
+  margin: auto;
+
+  .banner {
+    .texts {
+      h1,
+      p {
+        margin: 5px 0;
+        color: colors.$text-primary;
+      }
+
+      p {
+        font-weight: 600;
+      }
+
+      padding: 0 40px;
+      align-content: center;
+      background: rgba(255, 255, 255, 0.463);
+    }
+  }
+
+  &.phase2 {
+    background-color: black;
+
+    .inner-circle {
+      .penta {
+        position: absolute;
+        z-index: 1;
+        right: 20%;
+        width: 60%;
+      }
+
+      div {
+        background: rgba(255, 6, 6, 0.3);
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding: 15px 10px;
+        max-width: 700px;
+        margin: 20px auto;
+        display: grid;
+
+        .comment {
+          width: 100%;
+          margin: 3px 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: 40px auto;
+          p {
+            padding: 0 10px;
+          }
+
+          .user {
+            font-weight: 800;
+          }
+
+          .removed {
+            font-style: italic;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+
+    .glow-image {
+      filter: drop-shadow(0 0px 5px rgba(255, 6, 6, 1)) saturate(1);
+    }
 
     .banner {
-        .texts {
-            h1,
-            p {
-                margin: 5px 0;
-                color: colors.$text-primary;
-            }
-
-            p {
-                font-weight: 600;
-            }
-
-            padding: 0 20px;
-            align-content: center;
-            background: rgba(255, 255, 255, 0.2);
+      height: 11rem;
+      .texts {
+        background: rgba(0, 0, 0, 0.275);
+        h1,
+        p {
+          color: white;
         }
+      }
     }
 
-    &.phase1 {
+    section {
+      background-color: #611313;
+      color: #fff;
     }
 
-    &.phase2 {
-    }
+    .image-display {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
-    &.phase3 {
+      section {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         background-color: black;
 
-        .center-text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            p {
-                z-index: 2;
-                position: relative;
-                text-align: center;
-                font-size: 1.3rem;
-                color: rgb(255, 186, 182);
-                text-shadow: 0px 0px 5px rgb(0, 0, 0);
-                width: 50%;
-            }
-
-            .penta {
-                position: absolute;
-                z-index: 1;
-                right: 20%;
-                width: 60%;
-            }
+        img {
+          width: 150px;
+          height: 150px;
+          margin-right: 20px;
         }
-
-        .glow-image {
-            filter: drop-shadow(0 0px 5px rgba(255, 6, 6, 1)) saturate(1);
-        }
-
-        .banner {
-            height: 9rem;
-        }
-
-        section {
-            background-color: red;
-        }
-
-        #admins {
-            display: flex;
-            justify-content: space-around;
-
-            section {
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                background-color: black;
-
-                img {
-                    width: 150px;
-                    height: 150px;
-                    margin-right: 20px;
-                }
-            }
-        }
+      }
     }
+
+    .password {
+      padding-bottom: 50px;
+      margin: auto;
+      text-align: center;
+      z-index: 3;
+      position: relative;
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &.phase3 {
+    .center-text {
+      p {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        font-size: 1.3rem;
+        color: black;
+        padding: 20px 50px;
+        max-width: 700px;
+        margin: auto;
+      }
+    }
+
+    section {
+      background-color: #fff;
+      color: #000;
+    }
+  }
 }
