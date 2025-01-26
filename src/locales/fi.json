@@ -73,19 +73,13 @@
     "description": "Aamunsaraastuksen Mökkiseuran kalenteri",
     "imagedisplay": [
       {
-        "img": "sacrifice.png",
-        "title": "Family",
-        "description": "I'm sorry"
+        "img": "sacrifice.png"
       },
       {
-        "img": "sac2.jpg",
-        "title": "Brothers",
-        "description": "I'm sorry"
+        "img": "sac2.jpg"
       },
       {
-        "img": "sac3.jpg",
-        "title": "Sisters",
-        "description": "I'm sorry"
+        "img": "sac3.jpg"
       }
     ],
     "background-image": "penta.png",

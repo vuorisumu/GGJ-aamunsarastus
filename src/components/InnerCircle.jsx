@@ -41,8 +41,6 @@ function InnerCircle() {
           tr.imagedisplay.map((image, i) => (
             <section key={`img${i}`}>
               <img src={`./images/${image.img}`} />
-              <h2>{image.title}</h2>
-              <p>{image.description}</p>
             </section>
           ))}
       </div>
