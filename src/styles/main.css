@@ -316,6 +316,9 @@ section h2 {
 .comments section p {
   margin: 0;
 }
+.comments section p a {
+  color: var(--link-color);
+}
 .comments section .from .user {
   font-weight: 600;
 }

@@ -53,6 +53,9 @@ section {
 
     p {
       margin: 0;
+      a {
+        color: colors.$link-color;
+      }
     }
 
     .from {
