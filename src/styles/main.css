@@ -136,6 +136,13 @@ header.phase3 nav ul li:not(:first-child) a {
 #wrapper.phase2 .popup.closed {
   height: 0;
 }
+#wrapper.phase2 .popup .sender {
+  float: left;
+  color: white;
+  margin-top: -35px;
+  background: none;
+  font-weight: 800;
+}
 #wrapper.phase2 .popup button {
   float: right;
   margin-top: -35px;

@@ -76,6 +76,7 @@ function App() {
 
           {popup && phase === 2 && (
             <div className={`${closed ? "closed" : ""} popup`}>
+              <p className="sender">Ylläpito</p>
               <button onClick={() => setClosed(!closed)}>
                 {closed ? "^" : "_"}
               </button>
