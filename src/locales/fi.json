@@ -49,10 +49,11 @@
     ]
   },
   "join-us": {
-    "img": "cottage2.jpg",
+    "img": "ruoho.jpg",
     "title": "Tule osaksi yhteisöä",
     "content": [
       {
+        "imagesmall": ["marieljeskanen.jpg"],
         "text": "Oletko vailla unelmiesi kesämökkiä? Oletko haaveillut rauhallisista kesistä lempëän järvimaiseman äärellä? Kaipaatko rakastavaa perhettä, jonka kaltaista sinulla ei ole milloinkaan ollut? Kenties näet itsesi pysyvänä osana naapurustoa, jossa lähimmäisenrakkaus ja yhteisöllinen tekeminen ovat osa jokapäiväistä arkea? Me kutsumme sinut ilomielin seuraamme! Täytä alla oleva hakemus ja liity osaksi Aamunsarastuksen mökkiseuraa jo tänään!<br /><br />Meille tervetulleita ovat niin eläkepäiviään viettävät seniorit kuin aktiivista toimintaa kaipaavat lapsiperheetkin!<br /><br />HUOM! Emme ota vastaan mökkivarauksia tai ostotarjouksia!!!! Vapaana olevat mökit TARJOTAAN yhteisömme jäsenten käyttöön liittymisjärjestystä kunnioittaen ja hyväksymme uusia jäseniä seuraamme aina mökkien vapautuessa."
       }
     ],
