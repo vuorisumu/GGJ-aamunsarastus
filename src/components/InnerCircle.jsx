@@ -18,7 +18,7 @@ function InnerCircle() {
   });
 
   const checkInput = () => {
-    if (input === "salasana") {
+    if (input === "16-05-11-11-01") {
       initPhaseThree();
     } else {
       setInput("");
