@@ -364,6 +364,9 @@ footer p {
   display: flex;
   justify-content: center;
 }
+.video-container video {
+  width: 100%;
+}
 
 @media screen and (max-width: 500px) {
   header nav ul {
