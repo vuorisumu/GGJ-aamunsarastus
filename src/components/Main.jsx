@@ -17,7 +17,6 @@ function Main() {
       <div className="video-container">
         <video controls width="600">
           <source src={vid} type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
       </div>
       <Content data={tr.content} />
