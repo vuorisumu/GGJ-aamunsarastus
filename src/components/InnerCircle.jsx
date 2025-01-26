@@ -3,7 +3,6 @@ import PageIntro from "./PageIntro";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../util/UserContext";
 import { useNavigate } from "react-router-dom";
-import pentagram from "../../public/images/penta.png";
 
 function InnerCircle() {
   const { phase, initPhaseThree } = useContext(UserContext);
@@ -46,7 +45,6 @@ function InnerCircle() {
       </div>
 
       <div className="inner-circle">
-        <img src={pentagram} alt="pentagram" className="glow-image penta" />
         {tr.forum &&
           tr.forum.map((post, i) => (
             <div key={`post${i}`}>
